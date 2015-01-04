@@ -22,7 +22,7 @@
         <![endif]-->
     <!-- Modal -->
     <div class="modal" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog popout">
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -51,14 +51,8 @@
       <div id="left-arrow"><</div>
       <div id="right-arrow">></div>
         <div class="row">
-          <div class="col-md-12 header-wrap">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
+          <div class="col-md-12">
+            <div class="navbar-header">              
               <a class="profile-name" href="#"><span class="firstname-title">Kris</span> Finlayson</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse navbar-right">
@@ -78,134 +72,297 @@
             <li> <a class="video"> Video</a></li>
           </ul>
         </div>
-        <section id="current">
-          <div class="row">
-            <div class="col-md-3 popout">
-              <div class="view view-first">  
-                   <img src="img/portfolio/cabin.png" class="img-thumb" />  
-                   <div class="mask">  
-                   <h2>Title</h2>  
-                   <p>Your Text</p>  
-                       <a href="#" class="info">View</a>  
-                   </div>  
-              </div> 
-            </div>
-            <div class="col-md-3 popout">
-              <div class="view view-first">  
-                   <img src="img/portfolio/cake.png" class="img-thumb" />  
-                   <div class="mask">  
-                   <h2>Title</h2>  
-                   <p>Your Text</p>  
-                       <a href="#" class="info">View</a>  
-                   </div>  
-              </div> 
-           </div>
-            <div class="col-md-3 popout">
-              <div class="view view-first">  
-                   <img src="img/portfolio/circus.png" class="img-thumb" />  
-                   <div class="mask">  
+        <div id="slider-holder">
+          <section id="print" class="popin contentsection">
+            <div class="row">            
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/cabin.png" class="img-thumb" />  
+                     <div class="mask">  
                      <h2>Title</h2>  
                      <p>Your Text</p>  
-                     <a href="#" class="info">View</a>  
-                   </div>  
-              </div> 
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/cake.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+             </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/circus.png" class="img-thumb" />  
+                     <div class="mask">  
+                       <h2>Title</h2>  
+                       <p>Your Text</p>  
+                       <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/safe.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
             </div>
-            <div class="col-md-3 popout">
-              <div class="view view-first">  
-                   <img src="img/portfolio/safe.png" class="img-thumb" />  
-                   <div class="mask">  
-                   <h2>Title</h2>  
-                   <p>Your Text</p>  
-                       <a href="#" class="info">View</a>  
-                   </div>  
-              </div> 
+            <div class="row">
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/submarine.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/cake.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+             </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/circus.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/cabin.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 popout">
-              <div class="view view-first">  
-                   <img src="img/portfolio/submarine.png" class="img-thumb" />  
-                   <div class="mask">  
-                   <h2>Title</h2>  
-                   <p>Your Text</p>  
-                       <a href="#" class="info">View</a>  
-                   </div>  
-              </div> 
+            <div class="row">
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/cabin.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/circus.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+             </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/cake.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/safe.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
             </div>
-            <div class="col-md-3 popout">
-              <div class="view view-first">  
-                   <img src="img/portfolio/cake.png" class="img-thumb" />  
-                   <div class="mask">  
-                   <h2>Title</h2>  
-                   <p>Your Text</p>  
+          </section>
+          <section id="video" class="popin contentsection">
+            <div class="row">            
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                    <div class="videoWrapper">
+                        <!-- Copy & Pasted from YouTube -->
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/m8A8Jlhz94w" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                     <div class="mask">  
+                     <h2>Y NOT FLOW - Benefit Concert</h2>  
+                     <p>Promo Video for Online Publishing.</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <div class="videoWrapper">
+                        <!-- Copy & Pasted from YouTube -->
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="mask">  
+                     <h2>HOLI FESTIVAL - Unite Event</h2>  
+                     <p>Promo Video for Online Publishing
+                     </p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+             </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <div class="videoWrapper">
+                        <!-- Copy & Pasted from YouTube -->
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/Wy-NF3Qgx0U" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                     <div class="mask">  
+                       <h2>PEEK PACKAGING - Mock Ups</h2>  
+                       <p>Promo Video for Online Publishing <br>
+                          Filmed, Edited and Motion Graphics</p>  
                        <a href="#" class="info">View</a>  
-                   </div>  
-              </div> 
-           </div>
-            <div class="col-md-3 popout">
-              <div class="view view-first">  
-                   <img src="img/portfolio/circus.png" class="img-thumb" />  
-                   <div class="mask">  
-                   <h2>Title</h2>  
-                   <p>Your Text</p>  
-                       <a href="#" class="info">View</a>  
-                   </div>  
-              </div> 
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <div class="videoWrapper">
+                        <!-- Copy & Pasted from YouTube -->
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/8Ug-d7zqvec" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                     <div class="mask">  
+                     <h2>IMMERSED - Chico University</h2>  
+                     <p>Documentary Film Following International Students</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
             </div>
-            <div class="col-md-3 popout">
-              <div class="view view-first">  
-                   <img src="img/portfolio/cabin.png" class="img-thumb" />  
-                   <div class="mask">  
-                   <h2>Title</h2>  
-                   <p>Your Text</p>  
+            <div class="row">            
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                    <div class="videoWrapper">
+                        <!-- Copy & Pasted from YouTube -->
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/_A5ZrIyxaik" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                     <div class="mask">  
+                     <h2>FIRST AID KIT - Music Video Project</h2>  
+                     <p>Music Video Created for School Project</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <div class="videoWrapper">
+                        <!-- Copy & Pasted from YouTube -->
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/m8A8Jlhz94w" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="mask">  
+                     <h2>PEEK PACKAGING - Product Showcase</h2>  
+                     <p>Promo Video for Online Publishing <br>
+                        Filmed, Edited and Motion Graphics</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+             </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <div class="videoWrapper">
+                        <!-- Copy & Pasted from YouTube -->
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/u0KRoYRoiEQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                     <div class="mask">  
+                       <h2>JOHNNY BRAVO - Audio Project</h2>  
+                       <p>Sound Editing Created for School Project <br>
+                          Voices and Sound Effects by Kristina Finlayson</p>  
                        <a href="#" class="info">View</a>  
-                   </div>  
-              </div> 
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <div class="videoWrapper">
+                        <!-- Copy & Pasted from YouTube -->
+                        <!-- <iframe class="video-thumb" src="//www.youtube.com/embed/8Ug-d7zqvec" frameborder="0" allowfullscreen></iframe> -->
+                        COMMING SOON
+                    </div>
+                     <div class="mask">  
+                     <h2>Will be uploaded shortly <br> INFO SESSION - Chico State</h2>  
+                     <p>
+                        Informational Video Created for Study Abroad</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 popout">
-              <div class="view view-first">  
-                   <img src="img/portfolio/cabin.png" class="img-thumb" />  
-                   <div class="mask">  
-                   <h2>Title</h2>  
-                   <p>Your Text</p>  
+          </section>
+          <section id="web" class="popin contentsection">
+            <div class="row">            
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <!-- <img src="img/portfolio/cabin.png" class="img-thumb" /> -->
+                     <iframe class="img-thumb" src="//www.youtube.com/embed/m8A8Jlhz94w" frameborder="0" allowfullscreen></iframe>  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/cake.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+             </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/circus.png" class="img-thumb" />  
+                     <div class="mask">  
+                       <h2>Title</h2>  
+                       <p>Your Text</p>  
                        <a href="#" class="info">View</a>  
-                   </div>  
-              </div> 
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/safe.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
             </div>
-            <div class="col-md-3 popout">
-              <div class="view view-first">  
-                   <img src="img/portfolio/circus.png" class="img-thumb" />  
-                   <div class="mask">  
-                   <h2>Title</h2>  
-                   <p>Your Text</p>  
-                       <a href="#" class="info">View</a>  
-                   </div>  
-              </div> 
-           </div>
-            <div class="col-md-3 popout">
-              <div class="view view-first">  
-                   <img src="img/portfolio/cake.png" class="img-thumb" />  
-                   <div class="mask">  
-                   <h2>Title</h2>  
-                   <p>Your Text</p>  
-                       <a href="#" class="info">View</a>  
-                   </div>  
-              </div> 
-            </div>
-            <div class="col-md-3 popout">
-              <div class="view view-first">  
-                   <img src="img/portfolio/safe.png" class="img-thumb" />  
-                   <div class="mask">  
-                   <h2>Title</h2>  
-                   <p>Your Text</p>  
-                       <a href="#" class="info">View</a>  
-                   </div>  
-              </div> 
-            </div>
-          </div>
-        </section>
+          </section>          
+        </div>
       <hr>
 
       <footer>
@@ -216,7 +373,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
