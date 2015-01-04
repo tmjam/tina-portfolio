@@ -51,7 +51,7 @@
       <div id="left-arrow"><</div>
       <div id="right-arrow">></div>
         <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-12 header-wrap">
             <div class="navbar-header">              
               <a class="profile-name" href="#"><span class="firstname-title">Kris</span> Finlayson</a>
             </div>
