@@ -15,7 +15,7 @@ $(document).ready(function() {
 		$('#image-modal').find('.modal-title').html($this.prev().prev().clone());
 
 		var sectionWidth = $('section#current').width();
-		$('section#current').hide('slow');
+		//$('section#current').hide('slow');
 		console.log(sectionWidth);
 	});
 });
