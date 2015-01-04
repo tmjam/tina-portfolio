@@ -1,4 +1,4 @@
-application: porfolio
+application: portfolio
 version: 1
 runtime: php
 threadsafe: no
