@@ -71,7 +71,7 @@ ul.main-menu li a{
 	padding: 10px;
 	color: black;
 }
-ul.main-menu li a:hover {
+ul.main-menu li a:hover, ul.main-menu li a.active {
 	background-color: black;
 	color: white;
 	cursor: pointer;
@@ -184,6 +184,11 @@ a.profile-name span.firstname-title{
   min-height: 200px;
 }
 
+/**********************************************/
+
+#about-modal p{
+  font-weight: bold;
+}
 
 /***********************************************/
 .view {

@@ -29,10 +29,81 @@
             <h4 class="modal-title" id="image-modal-label">Modal title</h4>
           </div>
           <div class="modal-body">
-            ...
           </div>
           <div class="modal-footer">
            <i>Kristina Finlayson's Gallery</i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog popout">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="image-modal-label">What to have a chat?</h4>
+          </div>
+          <div class="modal-body">   
+            <form class="form-horizontal" role="form" method="post" action="index.php">
+              <div class="form-group">
+                  <label for="name" class="col-sm-2 control-label">Name</label>
+                  <div class="col-sm-10">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="email" class="col-sm-2 control-label">Email</label>
+                  <div class="col-sm-10">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+                  </div>
+              </div>
+              <div class="form-group">
+                  <label for="message" class="col-sm-2 control-label">Message</label>
+                  <div class="col-sm-10">
+                      <textarea class="form-control" rows="4" name="message"></textarea>
+                  </div>
+              </div>
+              <div class="form-group">
+                  <div class="col-sm-10 col-sm-offset-2">
+                      <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                  </div>
+              </div>
+          </form>         
+          </div>
+          <div class="modal-footer">
+           <i>Send me an email and we can talk til the cows come home!</i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog popout">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="image-modal-label">ABOUT</h4>
+          </div>
+          <div class="modal-body">
+            <div class="well">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="img/profile.png">
+              </div>
+              <div class="col-md-6">
+                  <p>I specialize in creating dynamic digital and print media. I have studied Media Arts and Graphic Design at CSU Chico for the past four years, but my love for design began in my early childhood. I am a videographer, editor, graphic designer, developer, marketing guru and overall creative person. 
+</p>
+                  <p>The majority of my experience deals with creating promotional videos, designing marketing material and strategies, and developing e-learning modules. I am a fast learner and pick up the newest programs and editing trends very quickly. </p>
+                  <a class="btn btn-info" href="download/resume.pdf">Download Resume</a>
+              </div>
+            </div>  
+          </div>
+          </div>
+          <div class="modal-footer">
+           <i>Bits' about me.</i>
           </div>
         </div>
       </div>
@@ -57,9 +128,9 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse navbar-right">
               <ul class="menu main-menu">
-                <li> <a href=""> WORK</a></li>
-                <li> <a href=""> CONTACT</a></li>
-                <li> <a href=""> ABOUT ME</a></li>
+                <li> <a id="work" href=""> WORK</a></li>
+                <li> <a id="contact" data-toggle="modal" data-target="#contact-modal"> CONTACT</a></li>
+                <li> <a id="about" data-toggle="modal" data-target="#about-modal"> ABOUT ME</a></li>
               </ul>
             </div>
           </div>
@@ -373,7 +444,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.1/jquery.fittext.min.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

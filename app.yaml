@@ -47,6 +47,9 @@ handlers:
 - url: /fonts
   static_dir: fonts 
 
+- url: /download
+  static_dir: download
+
 - url: /favicon.ico
   static_files: images/favicon.ico
   upload: images/favicon.ico 

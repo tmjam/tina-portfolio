@@ -1,6 +1,9 @@
 
 $('#image-modal').modal('hide');
 $('section.contentsection').addClass('popin');
+$('ul.main-menu li a').removeClass('active');
+$('ul.main-menu li a#work').addClass('active');
+
 $(document).ready(function() {
 
 	setTimeout(function() {
@@ -8,7 +11,6 @@ $(document).ready(function() {
 		$('#pre-loader').hide();   
 		$('.sub-menu .print').trigger('click'); 
 	}, 1000);	
-	$("#profile-name").fitText(1.2);
 
 	$(document).on('click', 'a.info', function(e){
 		e.preventDefault();
@@ -48,6 +50,22 @@ $(document).ready(function() {
 		$('section.contentsection').removeClass('popin');
 		$('.sub-menu li a').removeClass('sub-menu-active');
 		$(this).addClass('sub-menu-active');
+	});
+
+	$(document).on('click', 'div#left-arrow', function(e){
+		e.preventDefault();
+		var prevElement = $('.sub-menu li a.sub-menu-active').parent().prev();
+		if(prevElement){
+			prevElement.find('a').trigger('click');
+		}	
+	});
+
+	$(document).on('click', 'div#right-arrow', function(e){
+		e.preventDefault();
+		var nextElement = $('.sub-menu li a.sub-menu-active').parent().next();
+		if(nextElement){
+			nextElement.find('a').trigger('click');
+		}
 	});
 });
 
