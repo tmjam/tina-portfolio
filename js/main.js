@@ -52,20 +52,28 @@ $(document).ready(function() {
 		$(this).addClass('sub-menu-active');
 	});
 
-	$(document).on('click', 'div#left-arrow', function(e){
+	$(document).on('click', 'div#left-arrow', loadPrev);
+
+	$(document).on('click', 'div#right-arrow', loadNext);
+
+	$(document).on('swiperight', 'div.wrapper', loadPrev);
+	$(document).on('swipeleft', 'div.wrapper', loadNext);
+
+	function loadPrev(e){
 		e.preventDefault();
 		var prevElement = $('.sub-menu li a.sub-menu-active').parent().prev();
 		if(prevElement){
 			prevElement.find('a').trigger('click');
 		}	
-	});
+	}
 
-	$(document).on('click', 'div#right-arrow', function(e){
+	function loadNext(e){
 		e.preventDefault();
 		var nextElement = $('.sub-menu li a.sub-menu-active').parent().next();
 		if(nextElement){
 			nextElement.find('a').trigger('click');
 		}
-	});
+	}
+
 });
 
