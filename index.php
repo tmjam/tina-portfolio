@@ -279,7 +279,7 @@
                 <div class="view view-first">  
                     <div class="videoWrapper">
                         <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/m8A8Jlhz94w" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/dYyapzh5nLM?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
                     </div>
                      <div class="mask">  
                      <h2>Y NOT FLOW - Benefit Concert</h2>  
@@ -292,7 +292,7 @@
                 <div class="view view-first">  
                      <div class="videoWrapper">
                         <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="mask">  
                      <h2>HOLI FESTIVAL - Unite Event</h2>  
@@ -306,7 +306,7 @@
                 <div class="view view-first">  
                      <div class="videoWrapper">
                         <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/Wy-NF3Qgx0U" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/Wy-NF3Qgx0U?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
                     </div>
                      <div class="mask">  
                        <h2>PEEK PACKAGING - Mock Ups</h2>  
@@ -320,7 +320,7 @@
                 <div class="view view-first">  
                      <div class="videoWrapper">
                         <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/8Ug-d7zqvec" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/8Ug-d7zqvec?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
                     </div>
                      <div class="mask">  
                      <h2>IMMERSED - Chico University</h2>  
@@ -335,7 +335,7 @@
                 <div class="view view-first">  
                     <div class="videoWrapper">
                         <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/_A5ZrIyxaik" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/_A5ZrIyxaik?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
                     </div>
                      <div class="mask">  
                      <h2>FIRST AID KIT - Music Video Project</h2>  
@@ -348,7 +348,7 @@
                 <div class="view view-first">  
                      <div class="videoWrapper">
                         <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/m8A8Jlhz94w" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/m8A8Jlhz94w?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="mask">  
                      <h2>PEEK PACKAGING - Product Showcase</h2>  
@@ -362,7 +362,7 @@
                 <div class="view view-first">  
                      <div class="videoWrapper">
                         <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/u0KRoYRoiEQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="video-thumb" src="//www.youtube.com/embed/u0KRoYRoiEQ?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
                     </div>
                      <div class="mask">  
                        <h2>JOHNNY BRAVO - Audio Project</h2>  
@@ -394,7 +394,7 @@
               <div class="col-md-3 popout">
                 <div class="view view-first">  
                      <!-- <img src="img/portfolio/cabin.png" class="img-thumb" /> -->
-                     <iframe class="img-thumb" src="//www.youtube.com/embed/m8A8Jlhz94w" frameborder="0" allowfullscreen></iframe>  
+                     <iframe class="img-thumb" src="//www.youtube.com/embed/m8A8Jlhz94w?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>  
                      <div class="mask">  
                      <h2>Title</h2>  
                      <p>Your Text</p>  
