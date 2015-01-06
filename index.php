@@ -30,15 +30,20 @@
             <h4 class="modal-title" id="image-modal-label">Modal title</h4>
           </div>
           <div class="modal-body">
+            <!-- Navigations -->
+            <div id="modal-arrow-left"><</div>
+            <div id="modal-arrow-right">></div>
+            <div id="modal-body-content">
+            </div>
           </div>
           <div class="modal-footer">
-           <i>Kristina Finlayson's Gallery</i>
+           <i>Kris Finlayson's Gallery</i>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Modal -->
+    <!-- CONTACT Modal -->
     <div class="modal" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog popout">
         <div class="modal-content">
@@ -80,7 +85,7 @@
       </div>
     </div>
 
-    <!-- Modal -->
+    <!-- ABOUT Modal -->
     <div class="modal" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog popout">
         <div class="modal-content">

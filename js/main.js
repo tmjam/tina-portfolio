@@ -15,12 +15,14 @@ $(document).ready(function() {
 	$(document).on('click', 'a.info', function(e){
 		e.preventDefault();
 		var $this = $(e.currentTarget);
+		$('a.info').removeClass('active-modal-content');
+		$this.addClass('active-modal-content');
 		$('#image-modal').modal('show');
-		$('#image-modal').find('.modal-body').html($this.parent().prev().clone());
+		$('#image-modal').find('.modal-body #modal-body-content').html($this.parent().prev().clone()).append($this.prev().clone());
 		$('#image-modal').find('.modal-title').html($this.prev().prev().clone());
 
 		var sectionWidth = $('section#web').width();		
-		console.log(sectionWidth);
+		//console.log(sectionWidth);
 	});
 
 
@@ -56,6 +58,10 @@ $(document).ready(function() {
 
 	$(document).on('click', 'div#right-arrow', loadNext);
 
+	$(document).on('click', 'div#modal-arrow-left',loadPrevElem );
+
+	$(document).on('click', 'div#modal-arrow-right', loadNextElem);
+
 	$(document).on('swiperight', 'div.wrapper', loadPrev);
 	$(document).on('swipeleft', 'div.wrapper', loadNext);
 
@@ -75,5 +81,26 @@ $(document).ready(function() {
 		}
 	}
 
+	function loadPrevElem(e){
+		e.preventDefault();
+		var $currentElem = $('a.info.active-modal-content');
+		if($currentElem.parents('.col-md-3').prev().length > 0) {
+			$currentElem.parents('.col-md-3').prev().find('a.info').trigger('click');
+		} else if($currentElem.parents('.row').prev()){
+			console.log($currentElem.parents('.row').prev().find('div:last-child a.info'));
+			$currentElem.parents('.row').prev().find('div:last-child a.info').trigger('click');
+		}
+	}
+
+	function loadNextElem(e){
+		e.preventDefault();
+		var $currentElem = $('a.info.active-modal-content');
+		if($currentElem.parents('.col-md-3').next().length > 0) {
+			$currentElem.parents('.col-md-3').next().find('a.info').trigger('click');
+		} else if($currentElem.parents('.row').next()){
+			console.log($currentElem.parents('.row').next().find('div:first-child a.info').eq(0));
+			$currentElem.parents('.row').next().find('div:first-child a.info').eq(0).trigger('click');
+		}
+	}
 });
 
