@@ -37,6 +37,7 @@ section {
 	padding: 40px;
 	display: none;
   min-height: 500px;
+  transition: all 0.6s ease-in-out;
 }
 .header-wrap{
 	line-height: 75px;
@@ -131,7 +132,7 @@ a.profile-name span.firstname-title{
 	color: #eee;
 	display: inline-block;
 	padding: 20px 10px;
-	position: absolute;
+	position: fixed;
 	top: 60%;
 	cursor: pointer;
 }
@@ -202,6 +203,15 @@ a.profile-name span.firstname-title{
 #video .view {
   margin-top: 10px;
   min-height: 200px;
+}
+
+.fixedheader{
+  position: fixed;
+  z-index: 99;
+  background: rgba(255,255,255,0.9);
+  display: block;
+  margin-top: -65px;
+  transition: all 0.6s ease-in-out;
 }
 
 /**********************************************/
@@ -568,3 +578,43 @@ a.profile-name span.firstname-title{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+
+
+/*************** MDEIA QUERIES ***********************/
+
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+      .fixedheader{
+        width: 91%;
+      }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+      .fixedheader{
+        width: 90%;
+      }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+      .fixedheader{
+        width: 86%;
+      }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+      .fixedheader{
+        position: relative;
+      }
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }

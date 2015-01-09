@@ -12,6 +12,14 @@ $(document).ready(function() {
 		$('.sub-menu .print').trigger('click'); 
 	}, 1000);	
 
+
+	window.onscroll = function(){
+		if(window.pageYOffset > 2) {
+			$('.header-row').addClass('fixedheader');
+		} else {
+			$('.header-row').removeClass('fixedheader');
+		}
+	}
 	$(document).on('click', 'a.info', function(e){
 		e.preventDefault();
 		var $this = $(e.currentTarget);

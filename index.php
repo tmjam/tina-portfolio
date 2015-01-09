@@ -127,7 +127,7 @@
     <div class="wrapper">
       <div id="left-arrow"><</div>
       <div id="right-arrow">></div>
-        <div class="row">
+        <div class="row container header-row">
           <div class="col-md-12 header-wrap">
             <div class="navbar-header">              
               <a class="profile-name" href="#"><span class="firstname-title">Kris</span> Finlayson</a>
@@ -141,7 +141,7 @@
             </div>
           </div>
         </div><br>
-        <div class="row">
+        <div class="row container header-row" style="margin-top:8px;">
           <ul class="menu sub-menu">
             <li> <a class="all"> Show All</a></li>
             <li> <a class="print"> Print</a></li>
@@ -277,6 +277,48 @@
                 </div> 
               </div>
             </div>
+             <div class="row">            
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/cabin.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/cake.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+             </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/circus.png" class="img-thumb" />  
+                     <div class="mask">  
+                       <h2>Title</h2>  
+                       <p>Your Text</p>  
+                       <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-md-3 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/safe.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+            
           </section>
           <section id="video" class="popin contentsection">
             <div class="row">            
