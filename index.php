@@ -127,7 +127,7 @@
     <div class="wrapper">
       <div id="left-arrow"><</div>
       <div id="right-arrow">></div>
-        <div class="row container header-row">
+        <div class="row header-row">
           <div class="col-md-12 header-wrap">
             <div class="navbar-header">              
               <a class="profile-name" href="#"><span class="firstname-title">Kris</span> Finlayson</a>
@@ -141,7 +141,7 @@
             </div>
           </div>
         </div><br>
-        <div class="row container header-row" style="margin-top:8px;">
+        <div class="row header-row" style="margin-top:6px;">
           <ul class="menu sub-menu">
             <li> <a class="all"> Show All</a></li>
             <li> <a class="print"> Print</a></li>
@@ -151,10 +151,10 @@
         </div>
         <div id="slider-holder">
           <section id="print" class="popin contentsection">
-            <div class="row">            
+            <div class="row">           
               <div class="col-md-3 popout">
                 <div class="view view-first">  
-                     <img src="img/portfolio/cabin.png" class="img-thumb" />  
+                      <img src="img/portfolio/cake.png" class="img-thumb" />  
                      <div class="mask">  
                      <h2>Title</h2>  
                      <p>Your Text</p>  
@@ -437,39 +437,152 @@
             </div>
           </section>
           <section id="web" class="popin contentsection">
-            <div class="row">            
-              <div class="col-md-3 popout">
+            <div class="row">
+            <div class="col-sm-4 popout">
                 <div class="view view-first">  
-                     <!-- <img src="img/portfolio/cabin.png" class="img-thumb" /> -->
-                     <iframe class="img-thumb" src="//www.youtube.com/embed/m8A8Jlhz94w?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>  
+                     <img src="img/portfolio/baby/babyannouncement1.jpg" class="img-thumb" />  
                      <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
+                     <h2>Brooklyn Born Bambino</h2>  
+                     <div class="inner-slider">
+                      <span class="left"><</span> <span class="right">></span>
+                      <ul class="imgs">
+                          <li> <img class="img-thumb" src="img/portfolio/baby/babyannouncement1.jpg"> </li>
+                          <li> <img class="img-thumb" src="img/portfolio/baby/babyannouncement2.jpg"> </li>
+                          <li> <img class="img-thumb" src="img/portfolio/baby/babyannouncement3.jpg"> </li>
+                          <li> <img class="img-thumb" src="img/portfolio/baby/babyannouncement4.gif"> </li>
+                      </ul>
+                     </div>
+                     <div class="well inner-content">
+                        <div class="row">
+                          <div class="col-md-12"><img src="img/portfolio/baby/babyannouncement1.jpg" class="img-thumb" /></div>
+                          <div class="col-md-6"><img src="img/portfolio/baby/babyannouncement2.jpg" class="img-thumb" />  </div>
+                          <div class="col-md-6"><img src="img/portfolio/baby/babyannouncement3.jpg" class="img-thumb" />  </div>
+                        </div>
+                        <p>The Burke family wanted a two-in-one announcement celebrating the baby to come and their
+
+                          recent move to Brooklyn. I used the iconic brooklyn brownstones to represent their move and 
+
+                          pink lettering and carriage to represent the baby girl. The design started as a series of picture 
+
+                          frames with snippets of moments from the family’s life, but was then simplified down to what you 
+
+                          see now. The envelope was made from light-brown stock paper and was lined with a pink and 
+
+                          white textured paper. 
+
+                          My contributions
+                          <ul>
+                            <li>Client Consultation</li>
+                            <li>Sketching</li>
+                            <li>Card Design</li>
+                            <li>Printing</li>
+                          </ul>
+                        </p>
+                     </div>  
+                     <br>
+                     <a href="#" class="info" style="
+                          position: absolute;
+                          bottom: 0px;
+                          left: 43%;
+                      ">View</a>
                      </div>  
                 </div> 
               </div>
-              <div class="col-md-3 popout">
+              <div class="col-sm-4 popout">
                 <div class="view view-first">  
-                     <img src="img/portfolio/cake.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
+                     <img src="img/portfolio/word/WP_BusinessCard_Square-12.jpg" class="img-thumb" />  
+                     <div class="mask">
+                     <h2>Title</h2> 
+                     <div class="inner-slider">
+                      <span class="left"><</span> <span class="right">></span>
+                      <ul class="imgs">
+                          <li> <img class="img-thumb" src="img/portfolio/word/WP_BusinessCard_Square-12.jpg"> </li>
+                          <li> <img class="img-thumb" src="img/portfolio/word/WP_BusinessCard_Square-11.jpg"> </li>
+                          <li> <img class="img-thumb" src="img/portfolio/word/WP_BusinessCard_Square-13.jpg"> </li>
+                          <li> <img class="img-thumb" src="img/portfolio/word/WP_BusinessCard_Square-14.jpg"> </li>
+                          <li> <img class="img-thumb" src="img/portfolio/word/BrandingKitMockup1.jpg"> </li>
+                          <li> <img class="img-thumb" src="img/portfolio/word/WPSketches.jpg"> </li>
+                      </ul>
+                     </div>
+                     <div class="well inner-content">
+                        <div class="row">
+                          <div class="col-md-6"><img src="img/portfolio/word/WP_BusinessCard_Square-11.jpg" class="img-thumb" /></div>
+                          <div class="col-md-6"><img src="img/portfolio/word/WP_BusinessCard_Square-12.jpg" class="img-thumb" /></div>
+                          <div class="col-md-6"><img src="img/portfolio/word/WP_BusinessCard_Square-13.jpg" class="img-thumb" />  </div>
+                          <div class="col-md-6"><img src="img/portfolio/word/WP_BusinessCard_Square-14.jpg" class="img-thumb" />  </div>
+                          <div class="col-md-6"><img src="img/portfolio/word/BrandingKitMockup1.jpg" class="img-thumb" />  </div>
+                          <div class="col-md-6"><img src="img/portfolio/word/WPSketches.jpg" class="img-thumb" />  </div>
+                        </div>
+                        <p>The Burke family wanted a two-in-one announcement celebrating the baby to come and their
+
+                          recent move to Brooklyn. I used the iconic brooklyn brownstones to represent their move and 
+
+                          pink lettering and carriage to represent the baby girl. The design started as a series of picture 
+
+                          frames with snippets of moments from the family’s life, but was then simplified down to what you 
+
+                          see now. The envelope was made from light-brown stock paper and was lined with a pink and 
+
+                          white textured paper. 
+
+                          My contributions
+                          <ul>
+                            <li>Client Consultation</li>
+                            <li>Sketching</li>
+                            <li>Card Design</li>
+                            <li>Printing</li>
+                          </ul>
+                        </p>
+                     </div>   
+                     <br>
+                     <a href="#" class="info" style="
+                          position: absolute;
+                          bottom: 0px;
+                          left: 43%;
+                      ">View</a>
                      </div>  
                 </div> 
-             </div>
-              <div class="col-md-3 popout">
+             </div>            
+              
+              <div class="col-sm-4 popout">
                 <div class="view view-first">  
-                     <img src="img/portfolio/circus.png" class="img-thumb" />  
+                     <img src="img/portfolio/metabolic/metabolicdates.jpg" class="img-thumb" />  
                      <div class="mask">  
-                       <h2>Title</h2>  
+                       <h2>Metablic Dates</h2>  
                        <p>Your Text</p>  
+                        <div class="inner-slider">
+                        </div>
+                       <div class="well inner-content">
+                          <div class="row">
+                            <div class="col-md-12"><img src="img/portfolio/metabolic/metabolicdates.jpg" class="img-thumb" /></div>
+                          </div>
+                       </div>
+                       <br>
                        <a href="#" class="info">View</a>  
                      </div>  
                 </div> 
               </div>
-              <div class="col-md-3 popout">
+              <div class="col-sm-4 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/safe.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-sm-4 popout">
+                <div class="view view-first">  
+                     <img src="img/portfolio/safe.png" class="img-thumb" />  
+                     <div class="mask">  
+                     <h2>Title</h2>  
+                     <p>Your Text</p>  
+                         <a href="#" class="info">View</a>  
+                     </div>  
+                </div> 
+              </div>
+              <div class="col-sm-4 popout">
                 <div class="view view-first">  
                      <img src="img/portfolio/safe.png" class="img-thumb" />  
                      <div class="mask">  
@@ -482,7 +595,7 @@
             </div>
           </section>          
         </div>
-      <hr>
+      <hr style="background-color: black; height: 3px;">
 
       <footer>
         <p>Kristina Finlayson &copy; 2015</p>

@@ -9,7 +9,7 @@ $(document).ready(function() {
 	setTimeout(function() {
       	$('.wrapper').css('display','block');
 		$('#pre-loader').hide();   
-		$('.sub-menu .print').trigger('click'); 
+		$('.sub-menu .web').trigger('click'); 
 	}, 1000);	
 
 
@@ -26,8 +26,9 @@ $(document).ready(function() {
 		$('a.info').removeClass('active-modal-content');
 		$this.addClass('active-modal-content');
 		$('#image-modal').modal('show');
-		$('#image-modal').find('.modal-body #modal-body-content').html($this.parent().prev().clone()).append($this.prev().clone());
-		$('#image-modal').find('.modal-title').html($this.prev().prev().clone());
+		console.log($this.prev('.inner-content'));
+		$('#image-modal').find('.modal-body #modal-body-content').html($this.prev().prev().clone());
+		$('#image-modal').find('.modal-title').html($this.parent().find('h2').clone());
 
 		var sectionWidth = $('section#web').width();		
 		//console.log(sectionWidth);
@@ -72,6 +73,44 @@ $(document).ready(function() {
 
 	$(document).on('swiperight', 'div.wrapper', loadPrev);
 	$(document).on('swipeleft', 'div.wrapper', loadNext);
+
+	
+	var slideCount = $('.inner-slider ul li').length;
+	var slideWidth = $('.inner-slider ul li').width();
+	var slideHeight = $('.inner-slider ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	//$('.inner-slider').css({ width: slideWidth, height: slideHeight });
+	
+	//$('.inner-slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+    //$('.inner-slider ul li:last-child').prependTo('.inner-slider ul');
+
+    function moveLeft($this) {
+        $this.next().next().animate({
+            left: + slideWidth
+        }, 200, function () {
+            $this.parents('.view').find('.inner-slider ul li:last-child').prependTo('.inner-slider ul');
+            $this.parents('.view').find('.inner-slider ul').css('left', '');
+        });
+    };
+
+    function moveRight($this) {
+        $this.next().animate({
+            left: - slideWidth
+        }, 200, function () {
+            $this.parents('.view').find('.inner-slider ul li:first-child').appendTo('.inner-slider ul');
+            $this.parents('.view').find('.inner-slider ul').css('left', '');
+        });
+    };
+
+    $('.left').click(function () {
+        moveLeft($(this));
+    });
+
+    $('.right').click(function () {
+        moveRight($(this));
+    });
 
 	function loadPrev(e){
 		e.preventDefault();
