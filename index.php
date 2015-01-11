@@ -546,7 +546,7 @@
               
               <div class="col-sm-4 popout">
                 <div class="view view-first">  
-                     <img src="img/portfolio/metabolic/metabolicdates.jpg" class="img-thumb" />  
+                     <img src="img/portfolio/metabolic/MetabolicDates.jpg" class="img-thumb" />  
                      <div class="mask">  
                        <h2>Metablic Dates</h2>  
                        <p>Your Text</p>  
@@ -557,7 +557,7 @@
                             <div class="col-md-12"><img src="img/portfolio/metabolic/metabolicdates.jpg" class="img-thumb" /></div>
                           </div>
                        </div>
-                       <br>
+                       <br>ss
                        <a href="#" class="info">View</a>  
                      </div>  
                 </div> 
