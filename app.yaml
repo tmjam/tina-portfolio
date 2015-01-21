@@ -49,6 +49,9 @@ handlers:
 - url: /download
   static_dir: download
 
+- url: /bower_components
+  static_dir: bower_components
+
 - url: /favicon.ico
   static_files: images/favicon.ico
   upload: images/favicon.ico 
