@@ -1,0 +1,20 @@
+{
+  "name": "Tina - Portfolio",
+  "version": "1.0.0",
+  "main": "css/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "authors": [
+    "Tauseef Jamadar <tauseef.jamadar@yahoo.com>"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.1",
+    "normalize.css": "3.0.2",
+    "components-modernizr": "2.8.3",
+    "shufflejs": "3.0.0"
+  },
+  "devDependencies": {
+  }
+}

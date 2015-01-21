@@ -1,611 +1,165 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <meta http-equiv="cleartype" content="on">
 
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
 
-        <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#222222">
+
+        <!-- SEO: If mobile URL is different from desktop URL, add a canonical link to the desktop page -->
+        <!--
+        <link rel="canonical" href="http://www.example.com/" >
+        -->
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <!--
+        <meta name="mobile-web-app-capable" content="yes">
+        -->
+
+        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+        <!--
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+        -->
+
+        <!-- This script prevents links from opening in Mobile Safari. https://gist.github.com/1042026 -->
+        <!--
+        <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script>
+        -->
+
+        <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="bower_components/components-modernizr/modernizr.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <!-- Modal -->
-    <div class="modal" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog popout">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="image-modal-label">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            <!-- Navigations -->
-            <div id="modal-arrow-left"><</div>
-            <div id="modal-arrow-right">></div>
-            <div id="modal-body-content">
-            </div>
-          </div>
-          <div class="modal-footer">
-           <i>Kris Finlayson's Gallery</i>
-          </div>
-        </div>
-      </div>
-    </div>
 
-    <!-- CONTACT Modal -->
-    <div class="modal" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog popout">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="image-modal-label">What to have a chat?</h4>
-          </div>
-          <div class="modal-body">   
-            <form class="form-horizontal" role="form" method="post" action="index.php">
-              <div class="form-group">
-                  <label for="name" class="col-sm-2 control-label">Name</label>
-                  <div class="col-sm-10">
-                      <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label for="email" class="col-sm-2 control-label">Email</label>
-                  <div class="col-sm-10">
-                      <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-                  </div>
-              </div>
-              <div class="form-group">
-                  <label for="message" class="col-sm-2 control-label">Message</label>
-                  <div class="col-sm-10">
-                      <textarea class="form-control" rows="4" name="message"></textarea>
-                  </div>
-              </div>
-              <div class="form-group">
-                  <div class="col-sm-10 col-sm-offset-2">
-                      <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-                  </div>
-              </div>
-          </form>         
-          </div>
-          <div class="modal-footer">
-           <i>Send me an email and we can talk til the cows come home!</i>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ABOUT Modal -->
-    <div class="modal" id="about-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog popout">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="image-modal-label">ABOUT</h4>
-          </div>
-          <div class="modal-body">
-            <div class="well">
-            <div class="row">
-              <div class="col-md-6">
-                <img src="img/profile.png">
-              </div>
-              <div class="col-md-6">
-                  <p>I specialize in creating dynamic digital and print media. I have studied Media Arts and Graphic Design at CSU Chico for the past four years, but my love for design began in my early childhood. I am a videographer, editor, graphic designer, developer, marketing guru and overall creative person. 
-</p>
-                  <p>The majority of my experience deals with creating promotional videos, designing marketing material and strategies, and developing e-learning modules. I am a fast learner and pick up the newest programs and editing trends very quickly. </p>
-                  <a class="btn btn-info" href="download/resume.pdf">Download Resume</a>
-              </div>
-            </div>  
-          </div>
-          </div>
-          <div class="modal-footer">
-           <i>Bits' about me.</i>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="pre-loader">
-        <img src="img/profile.png">
-        <h4>Loading profile ...</h4> 
-        <svg id="rect-svg" width="40" height="40" viewbox="0 0 40 40">
-          <!-- <rect width="40" height="40" class="rect" />  <- this looks buggy in retina safari -->
-          <polygon points="0 0 0 40 40 40 40 0" class="rect" />
-        </svg>       
-    </div>
-
-    <div class="wrapper">
-      <div id="left-arrow"><</div>
-      <div id="right-arrow">></div>
-        <div class="row header-row">
-          <div class="col-md-12 header-wrap">
-            <div class="navbar-header">              
-              <a class="profile-name" href="#"><span class="firstname-title">Kris</span> Finlayson</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse navbar-right">
-              <ul class="menu main-menu">
-                <li> <a id="work" href=""> WORK</a></li>
-                <li> <a id="contact" data-toggle="modal" data-target="#contact-modal"> CONTACT</a></li>
-                <li> <a id="about" data-toggle="modal" data-target="#about-modal"> ABOUT ME</a></li>
-              </ul>
-            </div>
-          </div>
-        </div><br>
-        <div class="row header-row" style="margin-top:6px;">
-          <ul class="menu sub-menu">
-            <li> <a class="all"> Show All</a></li>
-            <li> <a class="print"> Print</a></li>
-            <li> <a class="web"> Web</a></li>
-            <li> <a class="video"> Video</a></li>
-          </ul>
-        </div>
-        <div id="slider-holder">
-          <section id="print" class="popin contentsection">
-            <div class="row">           
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                      <img src="img/portfolio/cake.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/cake.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-             </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/circus.png" class="img-thumb" />  
-                     <div class="mask">  
-                       <h2>Title</h2>  
-                       <p>Your Text</p>  
-                       <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/safe.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/submarine.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/cake.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-             </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/circus.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/cabin.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/cabin.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/circus.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-             </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/cake.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/safe.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-            </div>
-             <div class="row">            
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/cabin.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/cake.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-             </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/circus.png" class="img-thumb" />  
-                     <div class="mask">  
-                       <h2>Title</h2>  
-                       <p>Your Text</p>  
-                       <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/safe.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-            
-          </section>
-          <section id="video" class="popin contentsection">
-            <div class="row">            
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                    <div class="videoWrapper">
-                        <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/dYyapzh5nLM?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                     <div class="mask">  
-                     <h2>Y NOT FLOW - Benefit Concert</h2>  
-                     <p>Promo Video for Online Publishing.</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <div class="videoWrapper">
-                        <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="mask">  
-                     <h2>HOLI FESTIVAL - Unite Event</h2>  
-                     <p>Promo Video for Online Publishing
-                     </p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-             </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <div class="videoWrapper">
-                        <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/Wy-NF3Qgx0U?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                     <div class="mask">  
-                       <h2>PEEK PACKAGING - Mock Ups</h2>  
-                       <p>Promo Video for Online Publishing <br>
-                          Filmed, Edited and Motion Graphics</p>  
-                       <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <div class="videoWrapper">
-                        <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/8Ug-d7zqvec?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                     <div class="mask">  
-                     <h2>IMMERSED - Chico University</h2>  
-                     <p>Documentary Film Following International Students</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-            </div>
-            <div class="row">            
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                    <div class="videoWrapper">
-                        <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/_A5ZrIyxaik?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                     <div class="mask">  
-                     <h2>FIRST AID KIT - Music Video Project</h2>  
-                     <p>Music Video Created for School Project</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <div class="videoWrapper">
-                        <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/m8A8Jlhz94w?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="mask">  
-                     <h2>PEEK PACKAGING - Product Showcase</h2>  
-                     <p>Promo Video for Online Publishing <br>
-                        Filmed, Edited and Motion Graphics</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-             </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <div class="videoWrapper">
-                        <!-- Copy & Pasted from YouTube -->
-                        <iframe class="video-thumb" src="//www.youtube.com/embed/u0KRoYRoiEQ?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                     <div class="mask">  
-                       <h2>JOHNNY BRAVO - Audio Project</h2>  
-                       <p>Sound Editing Created for School Project <br>
-                          Voices and Sound Effects by Kristina Finlayson</p>  
-                       <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-md-3 popout">
-                <div class="view view-first">  
-                     <div class="videoWrapper">
-                        <!-- Copy & Pasted from YouTube -->
-                        <!-- <iframe class="video-thumb" src="//www.youtube.com/embed/8Ug-d7zqvec" frameborder="0" allowfullscreen></iframe> -->
-                        COMMING SOON
-                    </div>
-                     <div class="mask">  
-                     <h2>Will be uploaded shortly <br> INFO SESSION - Chico State</h2>  
-                     <p>
-                        Informational Video Created for Study Abroad</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-            </div>
-          </section>
-          <section id="web" class="popin contentsection">
-            <div class="row">
-            <div class="col-sm-4 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/baby/babyannouncement1.jpg" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Brooklyn Born Bambino</h2>  
-                     <div class="inner-slider">
-                      <span class="left"><</span> <span class="right">></span>
-                      <ul class="imgs">
-                          <li> <img class="img-thumb" src="img/portfolio/baby/babyannouncement1.jpg"> </li>
-                          <li> <img class="img-thumb" src="img/portfolio/baby/babyannouncement2.jpg"> </li>
-                          <li> <img class="img-thumb" src="img/portfolio/baby/babyannouncement3.jpg"> </li>
-                          <li> <img class="img-thumb" src="img/portfolio/baby/babyannouncement4.gif"> </li>
-                      </ul>
-                     </div>
-                     <div class="well inner-content">
-                        <div class="row">
-                          <div class="col-md-12"><img src="img/portfolio/baby/babyannouncement1.jpg" class="img-thumb" /></div>
-                          <div class="col-md-6"><img src="img/portfolio/baby/babyannouncement2.jpg" class="img-thumb" />  </div>
-                          <div class="col-md-6"><img src="img/portfolio/baby/babyannouncement3.jpg" class="img-thumb" />  </div>
+        <!-- Add your site or application content here -->
+        <div id="template-wrapper">
+            <div class="body-container">                
+                <div class="row">
+                    <div class="col-md-2" id="menu-container">                            
+                            <div id="profile-logo">
+                                <div id="logo">K</div>
+                                <span id="profile-name">KRISTINA FINLAYSON</span>
+                            </div>
+                            <nav>
+                                <ul id="navigation">
+                                    <li data-section="work">
+                                        Portfolio Work
+                                    </li>
+                                    <li data-section="resume">Resume</li>
+                                    <li data-section="contact">Contact Me</li>
+                                </ul>
+                            </nav>
+                        <div id="menu-hider">
                         </div>
-                        <p>The Burke family wanted a two-in-one announcement celebrating the baby to come and their
-
-                          recent move to Brooklyn. I used the iconic brooklyn brownstones to represent their move and 
-
-                          pink lettering and carriage to represent the baby girl. The design started as a series of picture 
-
-                          frames with snippets of moments from the family’s life, but was then simplified down to what you 
-
-                          see now. The envelope was made from light-brown stock paper and was lined with a pink and 
-
-                          white textured paper. 
-
-                          My contributions
-                          <ul>
-                            <li>Client Consultation</li>
-                            <li>Sketching</li>
-                            <li>Card Design</li>
-                            <li>Printing</li>
-                          </ul>
-                        </p>
-                     </div>  
-                     <br>
-                     <a href="#" class="info" style="
-                          position: absolute;
-                          bottom: 0px;
-                          left: 43%;
-                      ">View</a>
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-sm-4 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/word/WP_BusinessCard_Square-12.jpg" class="img-thumb" />  
-                     <div class="mask">
-                     <h2>Title</h2> 
-                     <div class="inner-slider">
-                      <span class="left"><</span> <span class="right">></span>
-                      <ul class="imgs">
-                          <li> <img class="img-thumb" src="img/portfolio/word/WP_BusinessCard_Square-12.jpg"> </li>
-                          <li> <img class="img-thumb" src="img/portfolio/word/WP_BusinessCard_Square-11.jpg"> </li>
-                          <li> <img class="img-thumb" src="img/portfolio/word/WP_BusinessCard_Square-13.jpg"> </li>
-                          <li> <img class="img-thumb" src="img/portfolio/word/WP_BusinessCard_Square-14.jpg"> </li>
-                          <li> <img class="img-thumb" src="img/portfolio/word/BrandingKitMockup1.jpg"> </li>
-                          <li> <img class="img-thumb" src="img/portfolio/word/WPSketches.jpg"> </li>
-                      </ul>
-                     </div>
-                     <div class="well inner-content">
-                        <div class="row">
-                          <div class="col-md-6"><img src="img/portfolio/word/WP_BusinessCard_Square-11.jpg" class="img-thumb" /></div>
-                          <div class="col-md-6"><img src="img/portfolio/word/WP_BusinessCard_Square-12.jpg" class="img-thumb" /></div>
-                          <div class="col-md-6"><img src="img/portfolio/word/WP_BusinessCard_Square-13.jpg" class="img-thumb" />  </div>
-                          <div class="col-md-6"><img src="img/portfolio/word/WP_BusinessCard_Square-14.jpg" class="img-thumb" />  </div>
-                          <div class="col-md-6"><img src="img/portfolio/word/BrandingKitMockup1.jpg" class="img-thumb" />  </div>
-                          <div class="col-md-6"><img src="img/portfolio/word/WPSketches.jpg" class="img-thumb" />  </div>
-                        </div>
-                        <p>The Burke family wanted a two-in-one announcement celebrating the baby to come and their
-
-                          recent move to Brooklyn. I used the iconic brooklyn brownstones to represent their move and 
-
-                          pink lettering and carriage to represent the baby girl. The design started as a series of picture 
-
-                          frames with snippets of moments from the family’s life, but was then simplified down to what you 
-
-                          see now. The envelope was made from light-brown stock paper and was lined with a pink and 
-
-                          white textured paper. 
-
-                          My contributions
-                          <ul>
-                            <li>Client Consultation</li>
-                            <li>Sketching</li>
-                            <li>Card Design</li>
-                            <li>Printing</li>
-                          </ul>
-                        </p>
-                     </div>   
-                     <br>
-                     <a href="#" class="info" style="
-                          position: absolute;
-                          bottom: 0px;
-                          left: 43%;
-                      ">View</a>
-                     </div>  
-                </div> 
-             </div>            
-              
-              <div class="col-sm-4 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/metabolic/MetabolicDates.jpg" class="img-thumb" />  
-                     <div class="mask">  
-                       <h2>Metablic Dates</h2>  
-                       <p>Your Text</p>  
-                        <div class="inner-slider">
-                        </div>
-                       <div class="well inner-content">
-                          <div class="row">
-                            <div class="col-md-12"><img src="img/portfolio/metabolic/metabolicdates.jpg" class="img-thumb" /></div>
-                          </div>
-                       </div>
-                       <br>ss
-                       <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-sm-4 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/safe.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-sm-4 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/safe.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
-              <div class="col-sm-4 popout">
-                <div class="view view-first">  
-                     <img src="img/portfolio/safe.png" class="img-thumb" />  
-                     <div class="mask">  
-                     <h2>Title</h2>  
-                     <p>Your Text</p>  
-                         <a href="#" class="info">View</a>  
-                     </div>  
-                </div> 
-              </div>
+                    </div>
+                    <div class="col-md-10" id="module-container">
+                        <section id="home" class="content-section">
+                            <div class="row">
+                                <div class="col-md-12 header-img">
+                                    <button class="primary-btn" style="position:absolute; right:0px; bottom:0px"><i class="glyphicon glyphicon-arrow-left"></i> CONTACT ME</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" style="padding: 20px 80px; font-size: 14px;line-height: 24px">
+                                    <h2 class="orange org-heading">Welcome!</h2>
+                                    <h2 class="sub-heading">Thanks for checking out my site.</h2>
+                                    <p class="context">
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row-fluid">
+                                <div class="col-md-6 item">
+                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_03.jpg">>
+                                </div>
+                                <div class="col-md-6 item">
+                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_05.jpg">>
+                                </div>
+                                <div class="col-md-6 item">
+                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_10.jpg">>
+                                </div>
+                                <div class="col-md-6 item">
+                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_12.jpg">>
+                                </div>
+                                <div class="col-md-6 item">
+                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_15.jpg">>
+                                </div>
+                                <div class="col-md-6 item">
+                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_17.jpg">>
+                                </div>
+                                <div class="col-md-6 item">
+                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_20.jpg">>
+                                </div>
+                                <div class="col-md-6 item">
+                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_22.jpg">>
+                                </div>
+                               <button id="more-designs" class="primary-btn" style="float: right;"><i class="glyphicon glyphicon-arrow-left"></i> MORE DESIGNS</button>
+                            </div>
+                        </section>
+                        <section id="work" class="content-section">
+                            <div id="work-module-container">                            
+                                <ul id="filter">
+                                    <li><a class="active" href="#" data-group="all">All</a></li>
+                                    <li><a href="#" data-group="featured">Featured</a></li>
+                                    <li><a href="#" data-group="graphic">Graphic Design</a></li>
+                                    <li><a href="#" data-group="design">UX Design</a></li>
+                                    <li><a href="#" data-group="video">Video Production</a></li>
+                                </ul>
+                                <div id="grid" class="row-fluid">
+                                    <div class="col-md-6 item" data-groups='["all", "design", "featured"]'>
+                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_03.jpg">>
+                                    </div>
+                                    <div class="col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
+                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_05.jpg">
+                                    </div>
+                                    <div class="col-md-6 item"  data-groups='["all", "graphic"]'>
+                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_10.jpg">
+                                    </div>
+                                    <div class="col-md-6 item" data-groups='["all", "video"]'>
+                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_12.jpg">
+                                    </div>
+                                    <div class="col-md-6 item" data-groups='["all", "design"]'>
+                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_15.jpg">
+                                    </div>
+                                    <div class="col-md-6 item" data-groups='["all", "featured", "graphic"]'>
+                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_17.jpg">
+                                    </div>
+                                    <div class="col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
+                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_20.jpg">
+                                    </div>
+                                    <div class="col-md-6 item" data-groups='["all", "video"]'>
+                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_22.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
-          </section>          
         </div>
-      <hr style="background-color: black; height: 3px;">
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/shufflejs/dist/jquery.shuffle.min.js"></script>
 
-      <footer>
-        <p>Kristina Finlayson &copy; 2015</p>
-      </footer>
-
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-        <script src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/helper.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -615,7 +169,7 @@
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            ga('create','UA-XXXXX-X');ga('send','pageview');            
         </script>
     </body>
 </html>
