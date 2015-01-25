@@ -90,7 +90,7 @@
                         <div id="menu-hider">
                         </div>
                     </div>
-                    <div class="col-md-10 container" id="module-container">
+                    <div class="col-md-9 container" id="module-container">
                         <div class="row">
                             <div class="col-md-12 header-img">
                                 <button class="primary-btn" style="position:absolute; right:50px; top:75%">SAY HELLO</button>
@@ -105,7 +105,16 @@
                                         <div class="col-md-12">
                                             <h2 class="sub-heading"></h2>
                                             <p class="context">
-                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                                
+                                                I am a print and digital designer, currently working and living in Brooklyn, New York, with
+
+                                                a passion for presenting content creatively, wireframing, designing layouts, and creating
+
+                                                anything media related. <br>
+
+                                                Outside of designing cool stuff, I love coffee­shop doodling, traveling with one pair of
+
+                                                pants and taking new streets to work everyday.
                                             </p>
 
                                             <div id="imgbadge">
@@ -203,13 +212,45 @@
                                 <ul class="bxslider">
                                   <li>                                   
                                     <img style="float:left" src="http://placehold.it/350x250" />
-                                    <div id="slider-content">
-                                        <p><h3>SKETCH IT</h3></p>
+                                    <div class="slider-content">
+                                        <h3>SKETCH IT</h3>
+                                        <p>After the goals of a product or project are set, I put the ink to the paper and sketch all the
+
+ideas that come to mind. I like this stage because there is nothing to be afraid of ­ it’s low
+
+cost and low risk. And I get to listen to some music while I do it.</p>
                                     </div>                                    
                                 </li>
-                                  <li><img src="http://placehold.it/350x250" /></li>
-                                  <li><img src="http://placehold.it/350x250" /></li>
-                                  <li><img src="http://placehold.it/350x250" /></li>
+                                  <li><img style="float:left" src="http://placehold.it/350x250" />
+                                    <div class="slider-content">
+                                        <h3>MOCK IT UP</h3>
+                                        <p>Now, I mock up wireframes and prototypes for the client so they can see where I’m
+
+headed. I usually show the client a few options and have them focus on overall design
+
+and functionality. I listen to all of their feedback and then we prioritize it.</p>
+                                    </div>
+                                  </li>
+                                  <li><img style="float:left" src="http://placehold.it/350x250" />
+                                  <div class="slider-content">
+                                        <h3>DESIGN IT</h3>
+                                        <p>Time to compile all of the ideas, wireframes and client feedback into one polished idea.
+
+This stage can also include some very low­stakes user testing/feedback. Some of my fav
+
+design programs: Photoshop, Illustrator, After Effects, and Premiere.</p>
+                                    </div>
+                                  </li>
+                                  <li><img style="float:left" src="http://placehold.it/350x250" />
+                                    <div class="slider-content">
+                                        <h3>DEVELOP IT</h3>
+                                        <p>So, I have the design and functionality set ­ the only thing left is development. Whether
+
+it’s coding, production or printing, this is when the idea is fully implemented. This means
+
+collaborating with developers, printers and/or other vendors to finish the job.</p>
+                                    </div>
+                                  </li>
                                 </ul>
                             </div>
                         </section>

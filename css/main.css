@@ -25,6 +25,10 @@
   src: url('../fonts/BebasNeue.otf');
 }
 @font-face{
+  font-family: 'BebasKaiRegular';
+  src: url('../fonts/BebasKai-Regular.otf');
+}
+@font-face{
   font-family: 'Calibril';
   src: url('../fonts/Calibril.ttf');  
 }
@@ -134,7 +138,7 @@ html,body,.body-container
   background-color: #111;
   color: white;
   height: 100vh;
-  width: 18%;
+  width: 26%;
   float: left;
 }
 #module-container {
@@ -143,7 +147,7 @@ html,body,.body-container
  overflow-x: hidden;
  background-color: white;
  position: absolute;
- top: 0; right: 0; bottom: 0; left: 14%;
+ top: 0; right: 0; bottom: 0; left: 25%;
  margin-right: 0px;
 }
 #menu-hider{
@@ -158,17 +162,25 @@ html,body,.body-container
 }
 #profile-name {
   font-family: BebasNeue;
-  font-size: 4.5rem;
+  font-size: 4.7rem;
 }
 #profile-logo{
-  text-align: center;
+  text-align: right;
   margin-bottom: 35px;
   margin-top: 15px;
   cursor: pointer;
+  margin-right: 60px;
 }
-#slider-content{
-  margin-left: 10px;
-  float: left;
+.slider-content{
+  position: absolute;
+  margin-left: 375px;
+
+}
+.slider-content h3 {  
+  font-family: BebasKaiRegular
+}
+.slider-content p {
+  font-size: 1.6rem;
 }
 #imgbadge{
   width: auto;
@@ -198,9 +210,10 @@ ul#navigation{
 }
 ul#navigation li{
   padding: 10px;
-  font-size: 2.2rem;
+  font-size: 2.0rem;
   color: #fdfdfd;
   cursor: pointer;
+  margin-right: 60px;
 }
 
 ul#navigation li:hover, ul#navigation li.menu-active{
@@ -325,6 +338,7 @@ img.img-grid:hover{
   -moz-filter: grayscale(0%);
   filter: grayscale(0%);
   filter: transparent;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
   cursor: pointer;
 }
 
@@ -524,7 +538,9 @@ textarea[contenteditable] {
  
   /* Large Devices, Wide Screens */
   @media only screen and (min-width : 1200px){
- 
+    .header-img button {
+      top: 60%;
+    }
   }
  
  
@@ -533,14 +549,14 @@ textarea[contenteditable] {
  
   /* Large Devices, Wide Screens */
   @media only screen and (max-width : 1200px){
- 
+    .header-img button {
+      top: 60% !important;
+    }
   }
  
   /* Medium Devices, Desktops */
   @media only screen and (max-width : 992px){
-    #menu-container{
-      display: none;
-    }
+    
     .item{
       width: 100%;
       height: 260px;
@@ -560,18 +576,22 @@ textarea[contenteditable] {
     .context {
       color: #333;
       width: 100%;
-      padding-right: 80px;
+    }
+    .item {
+      height: 230px;
+    }
+    .item img.img-grid {
+      height: 220px;
     }
     #imgbadge {
       position: relative;
-      width: 100%;
       display: inline-block;
       transform: rotate(0deg);
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
       -o-transform: rotate(0deg);
       top: 10px;
-      margin-left: 4px;
+      margin-left: 10%;
     }
     .content-section {
       margin-bottom: 50px;
@@ -583,8 +603,8 @@ textarea[contenteditable] {
       display: none;
     }
     .header-img{
-      height: 230px;
-      min-height: 230px;
+      height: 160px;
+      min-height: 160px;
     }
     #menu-container{
       width: 185px;    
