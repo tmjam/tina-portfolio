@@ -118,7 +118,7 @@
                                             </p>
 
                                             <div id="imgbadge">
-                                                <img src="img/portfolio/me.jpg" style="width: 290px">
+                                                <img src="img/portfolio/me.jpg" style="width: 250px">
                                                 <h4>ME</h4>
                                             </div>
                                         </div>
@@ -261,6 +261,9 @@ collaborating with developers, printers and/or other vendors to finish the job.<
                                 <div class="col-md-4"><img src="img/portfolio/HireMe.jpg" /></div>
                             </div>    
                         </section>
+                        <footer>
+                            <p>Copyright &copy; Kristina Finlayson 2015</p>
+                        </footer>   
                     </div>
                 </div>
             </div>
