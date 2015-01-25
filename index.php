@@ -43,27 +43,47 @@
         -->
 
         <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">        
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">        
         <link rel="stylesheet" href="css/main.css">
         <script src="bower_components/components-modernizr/modernizr.js"></script>
     </head>
     <body>
+        <!-- Modal -->
+        <div class="modal" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog popout">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="image-modal-label">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <!-- Navigations -->
+                <div id="modal-arrow-left"><</div>
+                <div id="modal-arrow-right">></div>
+                <div id="modal-body-content">
+                </div>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- Add your site or application content here -->
         <div id="template-wrapper">
             <div class="body-container">                
                 <div class="row">
-                    <div class="col-md-2" id="menu-container">                            
+                    <div id="menu-container">                            
                             <div id="profile-logo">
-                                <div id="logo">K</div>
+                                <div id="logo"><img src="img/portfolio/Logo.jpg"></div>
                                 <span id="profile-name">KRISTINA FINLAYSON</span>
                             </div>
                             <nav>
                                 <ul id="navigation">
-                                    <li data-section="work">
-                                        Portfolio Work
-                                    </li>
-                                    <li data-section="resume">Resume</li>
+                                    <li data-section="about">ABOUT ME</li>
+                                    <li data-section="featured">FEATURED WORK</li>
+                                    <li data-section="process">THE PROCESS</li>
                                     <li data-section="contact">Contact Me</li>
                                 </ul>
                             </nav>
@@ -71,22 +91,35 @@
                         </div>
                     </div>
                     <div class="col-md-10" id="module-container">
-                        <section id="home" class="content-section">
+                        <div class="row">
+                            <div class="col-md-12 header-img">
+                                <button class="primary-btn" style="position:absolute; right:50px; top:75%">SAY HELLO</button>
+                            </div>
+                        </div>
+                        <section id="about" class="content-section scrollable">
+                            
                             <div class="row">
-                                <div class="col-md-12 header-img">
-                                    <button class="primary-btn" style="position:absolute; right:0px; bottom:0px"><i class="glyphicon glyphicon-arrow-left"></i> CONTACT ME</button>
+                                <div class="col-md-12" style="padding: 35px; font-size: 14px;line-height: 24px">
+                                    <h2 class="orange org-heading">ABOUT ME</h2>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h2 class="sub-heading">Thanks for checking out my site.</h2>
+                                            <p class="context">
+                                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div id="imgbadge">
+                                                <img src="img/portfolio/me.jpg" style="width: 290px">
+                                                <h4>ME</h4>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-12" style="padding: 20px 80px; font-size: 14px;line-height: 24px">
-                                    <h2 class="orange org-heading">Welcome!</h2>
-                                    <h2 class="sub-heading">Thanks for checking out my site.</h2>
-                                    <p class="context">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row-fluid">
+                            <!-- <div class="row-fluid">
                                 <div class="col-md-6 item">
                                     <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_03.jpg">>
                                 </div>
@@ -112,9 +145,10 @@
                                     <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_22.jpg">>
                                 </div>
                                <button id="more-designs" class="primary-btn" style="float: right;"><i class="glyphicon glyphicon-arrow-left"></i> MORE DESIGNS</button>
-                            </div>
+                            </div> -->
                         </section>
-                        <section id="work" class="content-section">
+                        <section id="featured" class="content-section scrollable" style="padding: 20px">
+                            <h2 class="orange org-heading">FEATURED WORK</h2>
                             <div id="work-module-container">                            
                                 <ul id="filter">
                                     <li><a class="active" href="#" data-group="all">All</a></li>
@@ -151,13 +185,41 @@
                                 </div>
                             </div>
                         </section>
+                        <section id="process" class="content-section scrollable">
+                            <div id="process-gallery">
+                                <h2 class="org-heading" style="color: white;">THE PROCESS</h2>
+                                <p><span id="slider-prev"></span><span id="slider-next"></span></p>
+                                <ul class="bxslider">
+                                  <li>                                   
+                                    <img style="float:left" src="http://placehold.it/350x250" />
+                                    <div id="slider-content">
+                                        <p><h3>SKETCH IT</h3></p>
+                                    </div>                                    
+                                </li>
+                                  <li><img src="http://placehold.it/350x250" /></li>
+                                  <li><img src="http://placehold.it/350x250" /></li>
+                                  <li><img src="http://placehold.it/350x250" /></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section id="contact" class="content-section scrollable">
+                            <div class="row-fluid">
+                                <div class="col-md-4"><img src="img/portfolio/Resume.jpg" /></div>
+                                <div class="col-md-4"><img src="img/portfolio/SayHello.jpg" /></div>
+                                <div class="col-md-4"><img src="img/portfolio/HireMe.jpg" /></div>
+                            </div>    
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
         <script src="bower_components/shufflejs/dist/jquery.shuffle.min.js"></script>
+        <script src="js/animatescroll.js-master/animatescroll.min.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/jquery-ui-scrollable.min.js"></script>
 
         <script src="js/helper.js"></script>
         <script src="js/main.js"></script>
