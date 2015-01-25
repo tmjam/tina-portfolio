@@ -10,6 +10,7 @@
 			nextText: '<i class="glyphicon glyphicon-chevron-right"></i>',
   			prevText: '<i class="glyphicon glyphicon-chevron-left"></i>'
 		});
+	
 
 		$('#profile-logo').on('click', function(){
 			$('ul#navigation li').removeClass('menu-active');
@@ -72,6 +73,16 @@
         
         $(document).on('click', '.item', function(){
         	$('#image-modal').modal();
+        	var $modalDetail = $(this).find('.modal-details');
+        	$('#image-modal #modal-body-content').html($modalDetail.html());
+
+        	$('.modal .modal-bxslider').bxSlider({ 
+				mode: 'horizontal',
+				nextSelector: '#modal-arrow-right',
+				prevSelector: '#modal-arrow-left',
+				nextText: '<i class="glyphicon glyphicon-chevron-right"></i>',
+	  			prevText: '<i class="glyphicon glyphicon-chevron-left"></i>'
+			});
         });
 	});
 })();

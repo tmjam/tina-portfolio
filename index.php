@@ -51,7 +51,7 @@
     <body>
         <!-- Modal -->
         <div class="modal" id="image-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-          <div class="modal-dialog popout">
+          <div class="modal-dialog popout modal-lg">
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -59,8 +59,8 @@
               </div>
               <div class="modal-body">
                 <!-- Navigations -->
-                <div id="modal-arrow-left"><</div>
-                <div id="modal-arrow-right">></div>
+                <div class="slider-prev" id="modal-arrow-left"></div>
+                <div class="slider-next" id="modal-arrow-right" style="right: 20px;"></div>
                 <div id="modal-body-content">
                 </div>
               </div>
@@ -90,7 +90,7 @@
                         <div id="menu-hider">
                         </div>
                     </div>
-                    <div class="col-md-10" id="module-container">
+                    <div class="col-md-10 container" id="module-container">
                         <div class="row">
                             <div class="col-md-12 header-img">
                                 <button class="primary-btn" style="position:absolute; right:50px; top:75%">SAY HELLO</button>
@@ -102,18 +102,16 @@
                                 <div class="col-md-12" style="padding: 35px; font-size: 14px;line-height: 24px">
                                     <h2 class="orange org-heading">ABOUT ME</h2>
                                     <div class="row">
-                                        <div class="col-md-6">
-                                            <h2 class="sub-heading">Thanks for checking out my site.</h2>
+                                        <div class="col-md-12">
+                                            <h2 class="sub-heading"></h2>
                                             <p class="context">
                                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                                             </p>
-                                        </div>
-                                        <div class="col-md-6">
+
                                             <div id="imgbadge">
                                                 <img src="img/portfolio/me.jpg" style="width: 290px">
                                                 <h4>ME</h4>
                                             </div>
-                                            
                                         </div>
                                     </div>
                                     
@@ -157,30 +155,43 @@
                                     <li><a href="#" data-group="design">UX Design</a></li>
                                     <li><a href="#" data-group="video">Video Production</a></li>
                                 </ul>
-                                <div id="grid" class="row-fluid">
-                                    <div class="col-md-6 item" data-groups='["all", "design", "featured"]'>
-                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_03.jpg">>
+                                <div id="grid" class="row">
+                                    <div class="col-xs-12 col-md-6 item" data-groups='["all", "design", "featured"]'>
+                                        <img class="img-grid" src="img/portfolio/Amplify.jpg">
+                                        <div class="modal-details">
+                                            <ul class="modal-bxslider">
+                                              <li>                                   
+                                                <img style="float:left" src="http://placehold.it/350x250" />
+                                                <div id="modal-slider-content">
+                                                    <p><h3>SKETCH IT</h3></p>
+                                                </div>                                    
+                                            </li>
+                                              <li><img src="http://placehold.it/350x250" /></li>
+                                              <li><img src="http://placehold.it/350x250" /></li>
+                                              <li><img src="http://placehold.it/350x250" /></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
-                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_05.jpg">
+                                    <div class="col-xs-12 col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
+                                        <img class="img-grid" src="img/portfolio/WordPower.jpg">
                                     </div>
                                     <div class="col-md-6 item"  data-groups='["all", "graphic"]'>
-                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_10.jpg">
+                                        <img class="img-grid" src="img/portfolio/BurkeBabyAnnouncement.jpg">
                                     </div>
                                     <div class="col-md-6 item" data-groups='["all", "video"]'>
-                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_12.jpg">
+                                        <img class="img-grid" src="img/portfolio/UNITE.jpg">
                                     </div>
                                     <div class="col-md-6 item" data-groups='["all", "design"]'>
-                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_15.jpg">
+                                        <img class="img-grid" src="img/portfolio/MetabolicDates.jpg">
                                     </div>
                                     <div class="col-md-6 item" data-groups='["all", "featured", "graphic"]'>
-                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_17.jpg">
+                                        <img class="img-grid" src="img/portfolio/BarryCozy.jpg">
                                     </div>
                                     <div class="col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
-                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_20.jpg">
+                                        <img class="img-grid" src="img/portfolio/CulturalCompetence.jpg">
                                     </div>
                                     <div class="col-md-6 item" data-groups='["all", "video"]'>
-                                        <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_22.jpg">
+                                        <img class="img-grid" src="img/portfolio/PeekPackaging.jpg">
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +199,7 @@
                         <section id="process" class="content-section scrollable">
                             <div id="process-gallery">
                                 <h2 class="org-heading" style="color: white;">THE PROCESS</h2>
-                                <p><span id="slider-prev"></span><span id="slider-next"></span></p>
+                                <p><span id="slider-prev" class="slider-prev"></span><span id="slider-next" class="slider-next"></span></p>
                                 <ul class="bxslider">
                                   <li>                                   
                                     <img style="float:left" src="http://placehold.it/350x250" />

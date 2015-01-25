@@ -134,7 +134,7 @@ html,body,.body-container
   background-color: #111;
   color: white;
   height: 100vh;
-  width: 16%;
+  width: 18%;
   float: left;
 }
 #module-container {
@@ -142,6 +142,9 @@ html,body,.body-container
  overflow: scroll;
  overflow-x: hidden;
  background-color: white;
+ position: absolute;
+ top: 0; right: 0; bottom: 0; left: 14%;
+ margin-right: 0px;
 }
 #menu-hider{
   position: absolute;
@@ -173,16 +176,20 @@ html,body,.body-container
   border: 2px solid #aaa;
   background-color: #eee;
   position: absolute;
-  top: -20px;
+  top: -60px;
   padding: 10px;
   -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
     -moz-transform: rotate(7deg);
     transform: rotate(7deg);
+    right: 15%;
 }
 #imgbadge h4{
   font-family: BrainFlower;
   font-size: 3.3rem;
+}
+.modal-details{
+  display: none;
 }
 ul#navigation{
   font-family: BebasNeue;
@@ -210,7 +217,7 @@ text-transform: uppercase;}
 #filter a.active {background: #222; color: white; }
  
 #grid {clear: both; position: relative}
-.item {height: 280px; background: grey; color: #fff; font-size: 60px; text-align: center; line-height: 280px; cursor: default;}
+.item {height: 290px; background: transparent; color: #fff; font-size: 60px; text-align: center; line-height: 290px; cursor: default;}
 
 .red {background: red;}
 .green {background: green;}
@@ -236,17 +243,27 @@ text-transform: uppercase;}
 .content-section.active{
  
 }
-#slider-prev,#slider-next {
+.slider-prev,.slider-next {
   position: absolute;
   font-size: 1.5rem;
   color: white;
   top: 45%;
+  z-index: 99;
+}
+.modal-body .slider-prev,.modal-body .slider-next {
+  top: 40%;
+}
+.modal-body .bx-wrapper .bx-pager.bx-default-pager a {
+  background-color: #aaa;
 }
 
-#slider-next {
+.modal-body .bx-wrapper .bx-pager.bx-default-pager a.active {
+  background-color: #000;
+}
+.slider-next {
   right: 10px;
 }
-#slider-prev {
+.slider-prev {
   left: 10px;
 }
 
@@ -286,9 +303,10 @@ text-transform: uppercase;}
 }
 .context {
   color: #333;
+  width: 40%
 }
 img.img-grid{
-  width: 100%;
+  width: 98%;
   height: 280px;
   left: 0;
   right: 0;
@@ -484,11 +502,105 @@ textarea[contenteditable] {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 800px) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
-       only screen and (min-resolution: 144dpi) {
-    /* Style adjustments for viewports that meet the condition */
-}
+/* Custom, iPhone Retina */
+  @media only screen and (min-width : 320px){
+ 
+  }
+ 
+  /* Extra Small Devices, Phones */
+  @media only screen and (min-width : 480px){
+ 
+  }
+ 
+  /* Small Devices, Tablets */
+  @media only screen and (min-width : 768px){
+ 
+  }
+ 
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px){
+ 
+  }
+ 
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px){
+ 
+  }
+ 
+ 
+ 
+  /*==========  Non-Mobile First Method  ==========*/
+ 
+  /* Large Devices, Wide Screens */
+  @media only screen and (max-width : 1200px){
+ 
+  }
+ 
+  /* Medium Devices, Desktops */
+  @media only screen and (max-width : 992px){
+    #menu-container{
+      display: none;
+    }
+    .item{
+      width: 100%;
+      height: 260px;
+    }
+  }
+ 
+  /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px){
+    #menu-container{
+      width: 185px;
+    }
+  }
+ 
+  /* Extra Small Devices, Phones */
+  @media only screen and (max-width : 480px){
+    
+    .context {
+      color: #333;
+      width: 100%;
+      padding-right: 80px;
+    }
+    #imgbadge {
+      position: relative;
+      width: 100%;
+      display: inline-block;
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      top: 10px;
+      margin-left: 4px;
+    }
+    .content-section {
+      margin-bottom: 50px;
+    }
+    .sub-heading{
+      width: 80%;
+    }
+    #filter{
+      display: none;
+    }
+    .header-img{
+      height: 230px;
+      min-height: 230px;
+    }
+    #menu-container{
+      width: 185px;    
+    }
+    #module-container{
+      left: 0 !important;
+    }
+  }
+ 
+  /* Custom, iPhone Retina */
+  @media only screen and (max-width : 320px){
+    
+    #imgbadge{
+      width: auto;
+    }
+    .item{
+      width: 100%;
+    }
+  }
