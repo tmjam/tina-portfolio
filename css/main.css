@@ -135,10 +135,10 @@ html,body,.body-container
 }
 
 #menu-container{
-  background-color: #111;
+  background-color: #000;
   color: white;
   height: 100vh;
-  width: 26%;
+  width: 22%;
   float: left;
 }
 #module-container {
@@ -149,6 +149,7 @@ html,body,.body-container
  position: absolute;
  top: 0; right: 0; bottom: 0; left: 25%;
  margin-right: 0px;
+ width: 78.9%;
 }
 #menu-hider{
   position: absolute;
@@ -166,7 +167,7 @@ html,body,.body-container
 }
 #profile-logo{
   text-align: right;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   margin-top: 15px;
   cursor: pointer;
   margin-right: 60px;
@@ -174,6 +175,7 @@ html,body,.body-container
 .slider-content{
   position: absolute;
   margin-left: 375px;
+  margin-right: 24px;
 
 }
 .slider-content h3 {  
@@ -222,7 +224,7 @@ ul#navigation li:hover, ul#navigation li.menu-active{
 
 #container {width: 960px; margin: 0 auto;}
  
-#filter {list-style-type: none; padding: 15px 20px;
+#filter {list-style-type: none; padding: 15px 0px;
 border-bottom: 2px solid;}
 #filter li, #filter a {display: inline; margin: 0}
 #filter a { text-decoration: none; padding: 15px 20px;font-size: 1.2rem;
@@ -300,9 +302,12 @@ footer p{
   padding: 10px 20px;
   margin-left: -15px;
   margin-right: -15px;
-  padding-left: 55px;
+  padding-left: 35px;
   position: relative;
   min-height: 0px;
+}
+.bx-wrapper .bx-viewport {
+  left: -1px;
 }
 .primary-btn{
   color: #fff;
@@ -333,11 +338,10 @@ footer p{
   width: 40%
 }
 img.img-grid{
-  width: 98%;
+  width: 430px;
   height: 280px;
   left: 0;
   right: 0;
-  position: absolute;
   -webkit-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
@@ -579,9 +583,7 @@ textarea[contenteditable] {
  
   /* Small Devices, Tablets */
   @media only screen and (max-width : 768px){
-    #menu-container{
-      width: 185px;
-    }
+     
   }
  
   /* Extra Small Devices, Phones */
@@ -596,7 +598,9 @@ textarea[contenteditable] {
     }
     .item img.img-grid {
       height: 220px;
+      width: 300px;
     }
+
     #imgbadge {
       position: relative;
       display: inline-block;
@@ -621,10 +625,24 @@ textarea[contenteditable] {
       min-height: 160px;
     }
     #menu-container{
-      width: 185px;    
+      display: none;    
     }
+
     #module-container{
       left: 0 !important;
+      width: auto;
+    }
+    img.img-grid{
+       -webkit-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      filter: grayscale(0%);
+      filter: transparent;
+      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+      cursor: pointer;
+    }
+    #work-module-container{
+      margin-top: -35px;
     }
   }
  
@@ -636,5 +654,12 @@ textarea[contenteditable] {
     }
     .item{
       width: 100%;
+    }
+    
+     .header-img button {
+      top: 45% !important;
+    }
+    #work-module-container{
+      margin-top: -35px;
     }
   }

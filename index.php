@@ -76,7 +76,7 @@
                 <div class="row">
                     <div id="menu-container">                            
                             <div id="profile-logo">
-                                <div id="logo"><img src="img/portfolio/Logo.jpg"></div>
+                                <div id="logo"><img style="margin-bottom: 35px;" src="img/portfolio/Logo.jpg"></div>
                                 <span id="profile-name">KRISTINA FINLAYSON</span>
                             </div>
                             <nav>
@@ -126,33 +126,6 @@
                                     
                                 </div>
                             </div>
-                            <!-- <div class="row-fluid">
-                                <div class="col-md-6 item">
-                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_03.jpg">>
-                                </div>
-                                <div class="col-md-6 item">
-                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_05.jpg">>
-                                </div>
-                                <div class="col-md-6 item">
-                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_10.jpg">>
-                                </div>
-                                <div class="col-md-6 item">
-                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_12.jpg">>
-                                </div>
-                                <div class="col-md-6 item">
-                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_15.jpg">>
-                                </div>
-                                <div class="col-md-6 item">
-                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_17.jpg">>
-                                </div>
-                                <div class="col-md-6 item">
-                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_20.jpg">>
-                                </div>
-                                <div class="col-md-6 item">
-                                    <img class="img-grid" src="img/portfolio/images/images/Color/PortfolioRedesign3-Recovered-Recovered_22.jpg">>
-                                </div>
-                               <button id="more-designs" class="primary-btn" style="float: right;"><i class="glyphicon glyphicon-arrow-left"></i> MORE DESIGNS</button>
-                            </div> -->
                         </section>
                         <section id="featured" class="content-section scrollable" style="padding: 20px">
                             <h2 class="orange org-heading">FEATURED WORK</h2>
@@ -262,7 +235,7 @@ collaborating with developers, printers and/or other vendors to finish the job.<
                             </div>    
                         </section>
                         <footer>
-                            <p>Copyright &copy; Kristina Finlayson 2015</p>
+                            <p>Copyright &copy; 2015 Kristina Finlayson</p>
                         </footer>   
                     </div>
                 </div>
