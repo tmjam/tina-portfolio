@@ -99,7 +99,7 @@
                         <section id="about" class="content-section scrollable">
                             
                             <div class="row">
-                                <div class="col-md-12" style="padding: 35px; font-size: 14px;line-height: 24px">
+                                <div class="col-md-12" style="padding: 35px 85px; font-size: 14px;line-height: 24px">
                                     <h2 class="orange org-heading">ABOUT ME</h2>
                                     <div class="row">
                                         <div class="col-md-12">
@@ -110,7 +110,7 @@
 
                                                 a passion for presenting content creatively, wireframing, designing layouts, and creating
 
-                                                anything media related. <br>
+                                                anything media related. <br> <br>
 
                                                 Outside of designing cool stuff, I love coffee­shop doodling, traveling with one pair of
 
@@ -127,16 +127,16 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="featured" class="content-section scrollable" style="padding: 20px">
+                        <section id="featured" class="content-section scrollable" style="padding: 20px 70px;">
                             <h2 class="orange org-heading">FEATURED WORK</h2>
                             <div id="work-module-container">                            
-                                <ul id="filter">
+                                <!-- <ul id="filter">
                                     <li><a class="active" href="#" data-group="all">All</a></li>
                                     <li><a href="#" data-group="featured">Featured</a></li>
                                     <li><a href="#" data-group="graphic">Graphic Design</a></li>
                                     <li><a href="#" data-group="design">UX Design</a></li>
                                     <li><a href="#" data-group="video">Video Production</a></li>
-                                </ul>
+                                </ul> -->
                                 <div id="grid" class="row">
                                     <div class="col-xs-12 col-md-6 item" data-groups='["all", "design", "featured"]'>
                                         <img class="img-grid" src="img/portfolio/Amplify.jpg">
