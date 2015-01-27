@@ -118,7 +118,7 @@
                                             </p>
 
                                             <div id="imgbadge">
-                                                <img src="img/portfolio/me.jpg" style="width: 250px">
+                                                <img src="img/portfolio/me.jpg" style="width: 290px">
                                                 <h4>ME</h4>
                                             </div>
                                         </div>

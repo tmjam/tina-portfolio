@@ -191,12 +191,12 @@ html,body,.body-container
   background-color: #eee;
   position: absolute;
   top: 0px;
-  padding: 10px;
-  -ms-transform: rotate(7deg); /* IE 9 */
-    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
-    -moz-transform: rotate(7deg);
-    transform: rotate(7deg);
-    right: 15%;
+  padding: 6px;
+  -ms-transform: rotate(4deg); /* IE 9 */
+    -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+    -moz-transform: rotate(4deg);
+    transform: rotate(4deg);
+    right: 5%;
 }
 #imgbadge h4{
   font-family: BrainFlower;
@@ -335,8 +335,10 @@ footer p{
   font-size: 3rem;
 }
 .context {
+  font-family: HelveticaNeue;
   color: #333;
-  width: 40%
+  width: 45%;
+  font-size: 1.9rem;
 }
 img.img-grid{
   width: 105%;
