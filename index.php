@@ -45,6 +45,7 @@
         <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
         <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">        
         <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">        
+        <link rel="stylesheet" href="css/bottom.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="bower_components/components-modernizr/modernizr.js"></script>
     </head>
@@ -59,12 +60,10 @@
               </div>
               <div class="modal-body">
                 <!-- Navigations -->
-                <div class="slider-prev" id="modal-arrow-left"></div>
-                <div class="slider-next" id="modal-arrow-right" style="right: 20px;"></div>
+                <!-- <div class="slider-prev" id="modal-arrow-left"></div>
+                <div class="slider-next" id="modal-arrow-right" style="right: 20px;"></div> -->
                 <div id="modal-body-content">
                 </div>
-              </div>
-              <div class="modal-footer">
               </div>
             </div>
           </div>
@@ -141,39 +140,156 @@
                                     <div class="col-xs-12 col-md-6 item" data-groups='["all", "design", "featured"]'>
                                         <img class="img-grid" src="img/portfolio/Amplify.jpg">
                                         <div class="modal-details">
-                                            <ul class="modal-bxslider">
-                                              <li>                                   
-                                                <img style="float:left" src="http://placehold.it/350x250" />
-                                                <div id="modal-slider-content">
-                                                    <p><h3>SKETCH IT</h3></p>
-                                                </div>                                    
-                                            </li>
-                                              <li><img src="http://placehold.it/350x250" /></li>
-                                              <li><img src="http://placehold.it/350x250" /></li>
-                                              <li><img src="http://placehold.it/350x250" /></li>
+                                            <span class="modal-tt">Amplify - Professional Learing Maps</span>
+                                            <ul class="modal-slider">
+                                              <li>
+                                                <img src="img/details/Amplify/Illustrations.jpg"/>
+                                              </li>
+                                              <li><img src="img/details/Amplify/Interface.jpg" /></li>
+                                              <li><img src="img/details/Amplify/Video.jpg" /></li>
                                             </ul>
+                                            <div class="row well">
+                                                <div class="col-md-8">Amplify is creating Professional Development like never before. Professional Learning Maps is a product that offers quick and effective online learning for educators that don’t have a lot of time. It starts with a survey, where educators self assess how often they practice using certain skills. The results of the survey gives each educator a personalized learning map so that they can start practicing those skills they want the help most with.</div>
+                                                <div class="col-md-4">
+                                                    My Contributions <br>
+                                                    <ul>
+                                                        <li>UX Design</li>
+                                                        <li>Instructional Design</li>
+                                                        <li>Graphic Design</li>
+                                                        <li>Video Production</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
                                         <img class="img-grid" src="img/portfolio/WordPower.jpg">
+                                         <div class="modal-details">
+                                            <span class="modal-tt">Word Power - Logo Design</span>
+                                            <ul class="modal-slider">
+                                              <li>
+                                                <img src="img/details/WordPower/Logo_09.jpg"/>
+                                              </li>
+                                              <li><img src="img/details/WordPower/brandingkit_09.jpg" /></li>
+                                              <li><img src="img/details/WordPower/envelope_09.jpg" /></li>
+                                              <li><img src="img/details/WordPower/Website_09.jpg" /></li>
+                                              <li><img src="img/details/WordPower/Sketch_09.jpg" /></li>
+                                            </ul>
+                                            <div class="row well">
+                                                <div class="col-md-8">Shaun Harrison, the founder of Word Power, approached me to create a logo design and branding kit for his startup in Barcelona, Spain.  Word Power provides coaching for individuals looking to improve their presentation and interview skills. The kit includes a logo design, envelopes, business cards, letterheads and posters. </div>
+                                                <div class="col-md-4">
+                                                    My Contributions <br>
+                                                    <ul>
+                                                        <li>Graphic Design</li>
+                                                        <li>Logo Design</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-6 item"  data-groups='["all", "graphic"]'>
                                         <img class="img-grid" src="img/portfolio/BurkeBabyAnnouncement.jpg">
+                                        <div class="modal-details">
+                                            <span class="modal-tt">Baby Burke - Announcement</span>
+                                            <ul class="modal-slider">
+                                              <li>
+                                                <img src="img/details/BabyBurke/FinalConcept_09.jpg"/>
+                                              </li>
+                                              <li><img src="img/details/BabyBurke/InitialConcept_09.jpg" /></li>
+                                              <li><img src="img/details/BabyBurke/Photo_09.jpg" /></li>
+                                            </ul>
+                                            <div class="row well">
+                                                <div class="col-md-8">The Burke family wanted a two-in-one announcement celebrating the baby to come and their recent move to Brooklyn. The design started as a series of picture frames with snippets of moments from the family’s life, but was then simplified down to what you see now. The envelope was made from light-brown stock paper and was lined with a pink and white textured recycled paper.</div>
+                                                <div class="col-md-4">
+                                                    My Contributions <br>
+                                                    <ul>
+                                                        <li>Client Consultation</li>
+                                                        <li>Graphic Design</li>
+                                                        <li>Illustration</li>
+                                                        <li>Printing/Production</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-6 item" data-groups='["all", "video"]'>
                                         <img class="img-grid" src="img/portfolio/UNITE.jpg">
+                                        <div class="modal-details">
+                                            <span class="modal-tt">UNITE</span>
+                                            <ul class="modal-slider">
+                                              <li>
+                                                <iframe class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
+                                              </li>
+                                              <li><iframe class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe></li>
+                                            </ul>
+                                            <div class="row well">
+                                                <div class="col-md-8">Universal Networks in Travel and Education wanted me to help increase attendance to their events via social media. I created a series of promotional videos and flyers for club members to share with friends and family online and helped managed the sites to get people more excited. </div>
+                                                <div class="col-md-4">
+                                                    My Contributions <br>
+                                                    <ul>
+                                                        <li>Video Editing</li>
+                                                        <li>Graphic Design</li>
+                                                        <li>Marketing and Recruitment</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-6 item" data-groups='["all", "design"]'>
                                         <img class="img-grid" src="img/portfolio/MetabolicDates.jpg">
+                                        <div class="modal-details">
+                                            <span class="modal-tt">Metabolic Dates - Logo</span>
+                                            <ul class="modal-slider">
+                                              <li>
+                                                <img src="img/details/MetabolicDates/metabolicdates_09.jpg"/>
+                                              </li>
+                                            </ul>
+                                            <div class="row well">
+                                                <div class="col-md-8">If you’ve ever had a bad date, then this blog is for you. A blogger shares true stories of her really really awkward date experiences that took her way too much work/effort than they were worth. She asked me for a logo design that combined the idea of hard work and dating and this is what she got.</div>
+                                                <div class="col-md-4">
+                                                    My Contributions <br>
+                                                    <ul>
+                                                        <li>Logo Design</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-6 item" data-groups='["all", "featured", "graphic"]'>
                                         <img class="img-grid" src="img/portfolio/BarryCozy.jpg">
+                                        <div class="modal-details">
+                                            COMING SOON
+                                        </div>
                                     </div>
                                     <div class="col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
                                         <img class="img-grid" src="img/portfolio/CulturalCompetence.jpg">
+                                        <div class="modal-details">
+                                            <span class="modal-tt">Cultural Competence</span>
+                                            <ul class="modal-slider">
+                                              <li>
+                                                <img src="img/details/CulturalCompetence/CC_09.jpg"/>
+                                              </li>
+                                              <li><img src="img/details/CulturalCompetence/video_09.jpg"/></li>
+                                            </ul>
+                                            <div class="row well">
+                                                <div class="col-md-8">My main task at VSP was to create a new training module about Cultural Diversity. This module was to open up a way of learning for the company - a module with multimedia and fun ways to interact with the content - not just reading text on screen. Cultural Competence and DIversity can be a touchy subject to talk about, so I planned to get the employees to talk about their experiences and do the teaching themselves. </div>
+                                                <div class="col-md-4">
+                                                    My Contributions <br>
+                                                    <ul>
+                                                        <li>Graphic Design</li>
+                                                        <li>UX Design</li>
+                                                        <li>Video Production</li>
+                                                        <li>Animation</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-6 item" data-groups='["all", "video"]'>
                                         <img class="img-grid" src="img/portfolio/PeekPackaging.jpg">
+                                        <div class="modal-details">
+                                            COMING SOON
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -248,6 +364,9 @@ collaborating with developers, printers and/or other vendors to finish the job.<
         <script src="js/animatescroll.js-master/animatescroll.min.js"></script>
         <script src="js/jquery.bxslider.min.js"></script>
         <script src="js/jquery-ui-scrollable.min.js"></script>
+        <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.pikachoose.min.js"></script>
+        <script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
 
         <script src="js/helper.js"></script>
         <script src="js/main.js"></script>

@@ -10,7 +10,7 @@
 			nextText: '<i class="glyphicon glyphicon-chevron-right"></i>',
   			prevText: '<i class="glyphicon glyphicon-chevron-left"></i>'
 		});
-	
+		
 
 		$('#profile-logo').on('click', function(){
 			$('ul#navigation li').removeClass('menu-active');
@@ -44,9 +44,9 @@
 		   my: "bottom",
 		   offset: { top: '-20%' },
            in: function ( e, ui ) {
-           		console.log(e, ui.element[0].id);
-           		$('ul#navigation li').removeClass('menu-active');
-           		$('ul#navigation li[data-section='+ui.element[0].id+']').addClass('menu-active');
+           		//console.log(e, ui.element[0].id);
+           		//$('ul#navigation li').removeClass('menu-active');
+           		//$('ul#navigation li[data-section='+ui.element[0].id+']').addClass('menu-active');
            }
         });
 		/* initialize shuffle plugin */
@@ -75,14 +75,12 @@
         	$('#image-modal').modal();
         	var $modalDetail = $(this).find('.modal-details');
         	$('#image-modal #modal-body-content').html($modalDetail.html());
-
-        	$('.modal .modal-bxslider').bxSlider({ 
-				mode: 'horizontal',
-				nextSelector: '#modal-arrow-right',
-				prevSelector: '#modal-arrow-left',
-				nextText: '<i class="glyphicon glyphicon-chevron-right"></i>',
-	  			prevText: '<i class="glyphicon glyphicon-chevron-left"></i>'
-			});
+        	$('#image-modal #image-modal-label').html($(this).find('.modal-tt').html());
+        	$(".modal .modal-slider").PikaChoose({
+        		autoPlay: false, 
+        		showTooltips:false,
+        		IESafe:true
+        	});
         });
 	});
 })();

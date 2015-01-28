@@ -174,7 +174,7 @@ html,body,.body-container
 }
 .slider-content{
   position: absolute;
-  margin-left: 375px;
+  margin-left: 53%;
   margin-right: 24px;
 
 }
@@ -183,6 +183,9 @@ html,body,.body-container
 }
 .slider-content p {
   font-size: 1.6rem;
+}
+ul.bxslider li img {
+  width: 50%;
 }
 #imgbadge{
   width: auto;
@@ -222,9 +225,25 @@ ul#navigation li{
 ul#navigation li:hover, ul#navigation li.menu-active{
   border-right: 10px solid white;  
 }
-
+.pika-stage, .pika-textnav{
+  width: 98%;
+  margin: 0 auto;
+}
+.pika-stage{
+  height: 350px !important;
+}
+.modal-tt {
+  display: none;
+}
 #container {width: 960px; margin: 0 auto;}
- 
+#modal-body-content {
+  font-size: 1.6rem;
+  font-family: HelveticaNeue;
+}
+#image-modal .modal-title {
+  font-family: BebasNeue;
+  text-transform: uppercase;
+}
 #filter {list-style-type: none; padding: 15px 0px;
 border-bottom: 2px solid;}
 #filter li, #filter a {display: inline; margin: 0}
@@ -655,6 +674,14 @@ textarea[contenteditable] {
     }
     #process {
       padding: 20px !important;
+    }
+
+    .pika-stage img {
+    height: 100%;
+    width: 100%;
+    }
+    ul.modal-slider.pika-thumbs{
+      display: none;
     }
   }
  
