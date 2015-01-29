@@ -68,7 +68,47 @@
             </div>
           </div>
         </div>
-
+        <!-- CONTACT Modal -->
+        <div class="modal" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog popout">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="image-modal-label">What to have a chat?</h4>
+              </div>
+              <div class="modal-body">   
+                <form class="form-horizontal" role="form" method="post" action="index.php">
+                  <div class="form-group">
+                      <label for="name" class="col-sm-2 control-label">Name</label>
+                      <div class="col-sm-10">
+                          <input type="text" required class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="email" class="col-sm-2 control-label">Email</label>
+                      <div class="col-sm-10">
+                          <input type="email" required class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="message" class="col-sm-2 control-label">Message</label>
+                      <div class="col-sm-10">
+                          <textarea required class="form-control" rows="4" name="message"></textarea>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <div class="col-sm-10 col-sm-offset-2">
+                          <input id="submit" name="submit" type="submit" value="Send" class="primary-btn">
+                      </div>
+                  </div>
+              </form>         
+              </div>
+              <div class="modal-footer">
+               <i>Send me an email and we can talk til the cows come home!</i>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Add your site or application content here -->
         <div id="template-wrapper">
             <div class="body-container">                
@@ -89,10 +129,11 @@
                         <div id="menu-hider">
                         </div>
                     </div>
+                    <div class="col-md-9 container" id="pre-loader"><img src="img/loading-cylon.svg" alt="Loading icon" /> <br> Loading ...</div>
                     <div class="col-md-9 container" id="module-container">
                         <div class="row">
                             <div class="col-md-12 header-img">
-                                <button class="primary-btn" style="position:absolute; right:50px; top:75%">SAY HELLO</button>
+                                <button id="say-hello-top" style="position:absolute; right:50px; top:75%" class="primary-btn">SAY HELLO</button>
                             </div>
                         </div>
                         <section id="about" class="content-section scrollable">
@@ -300,7 +341,7 @@
                                 <p><span id="slider-prev" class="slider-prev"></span><span id="slider-next" class="slider-next"></span></p>
                                 <ul class="bxslider">
                                   <li>                                   
-                                    <img style="float:left" src="http://placehold.it/350x250" />
+                                    <img style="float:left" src="img/process/sketch_13.jpg" />
                                     <div class="slider-content">
                                         <h3>SKETCH IT</h3>
                                         <p>After the goals of a product or project are set, I put the ink to the paper and sketch all the
@@ -310,7 +351,7 @@ ideas that come to mind. I like this stage because there is nothing to be afraid
 cost and low risk. And I get to listen to some music while I do it.</p>
                                     </div>                                    
                                 </li>
-                                  <li><img style="float:left" src="http://placehold.it/350x250" />
+                                  <li><img style="float:left" src="img/process/wireframe_13.jpg" />
                                     <div class="slider-content">
                                         <h3>MOCK IT UP</h3>
                                         <p>Now, I mock up wireframes and prototypes for the client so they can see where I’m
@@ -320,7 +361,7 @@ headed. I usually show the client a few options and have them focus on overall d
 and functionality. I listen to all of their feedback and then we prioritize it.</p>
                                     </div>
                                   </li>
-                                  <li><img style="float:left" src="http://placehold.it/350x250" />
+                                  <li><img style="float:left" src="img/process/designit_13.jpg" />
                                   <div class="slider-content">
                                         <h3>DESIGN IT</h3>
                                         <p>Time to compile all of the ideas, wireframes and client feedback into one polished idea.
@@ -330,7 +371,7 @@ This stage can also include some very low­stakes user testing/feedback. Some of
 design programs: Photoshop, Illustrator, After Effects, and Premiere.</p>
                                     </div>
                                   </li>
-                                  <li><img style="float:left" src="http://placehold.it/350x250" />
+                                  <li><img style="float:left" src="img/process/wireframe_13.jpg" />
                                     <div class="slider-content">
                                         <h3>DEVELOP IT</h3>
                                         <p>So, I have the design and functionality set ­ the only thing left is development. Whether
@@ -345,8 +386,8 @@ collaborating with developers, printers and/or other vendors to finish the job.<
                         </section>
                         <section id="contact" class="content-section scrollable">
                             <div class="row-fluid">
-                                <div class="col-md-4"><img src="img/portfolio/Resume.jpg" /></div>
-                                <div class="col-md-4"><img src="img/portfolio/SayHello.jpg" /></div>
+                                <div class="col-md-4"><a href="download/resume.pdf" target="_blank"><img src="img/portfolio/Resume.jpg" /></a></div>
+                                <div class="col-md-4"><a href="" id="say-hello-bottom"><img src="img/portfolio/SayHello.jpg" /></a></div>
                                 <div class="col-md-4"><img src="img/portfolio/HireMe.jpg" /></div>
                             </div>    
                         </section>
