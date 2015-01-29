@@ -154,8 +154,12 @@ display: none;
 }
 #contact-modal {
   font-family: BebasNeue;
-
 }
+.pika-stage .pika-textnav, .pika-stage .pika-counter, .pika-stage .caption {
+  display: none !important;
+}
+
+
 #contact-modal .primary-btn{
   color: black;
   border-color: black;
