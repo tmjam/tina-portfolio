@@ -33,7 +33,10 @@ handlers:
 
 - url: /
   script: index.php
-
+  
+- url: /index.php
+  script: index.php
+  
 - url: /js
   static_dir: js
 

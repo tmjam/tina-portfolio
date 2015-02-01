@@ -177,32 +177,7 @@
                                     <li><a href="#" data-group="design">UX Design</a></li>
                                     <li><a href="#" data-group="video">Video Production</a></li>
                                 </ul> -->
-                                <div id="grid" class="row">
-                                    <div class="col-xs-12 col-md-6 item" data-groups='["all", "design", "featured"]'>
-                                        <img class="img-grid" src="img/portfolio/Amplify.jpg">
-                                        <div class="modal-details">
-                                            <span class="modal-tt">Amplify - Professional Learing Maps</span>
-                                            <ul class="modal-slider">
-                                              <li>
-                                                <img src="img/details/Amplify/Illustrations.jpg"/>
-                                              </li>
-                                              <li><img src="img/details/Amplify/Interface.jpg" /></li>
-                                              <li><img src="img/details/Amplify/Video.jpg" /></li>
-                                            </ul>
-                                            <div class="row well">
-                                                <div class="col-md-8">Amplify is creating Professional Development like never before. Professional Learning Maps is a product that offers quick and effective online learning for educators that don’t have a lot of time. It starts with a survey, where educators self assess how often they practice using certain skills. The results of the survey gives each educator a personalized learning map so that they can start practicing those skills they want the help most with.</div>
-                                                <div class="col-md-4">
-                                                    My Contributions <br>
-                                                    <ul>
-                                                        <li>UX Design</li>
-                                                        <li>Instructional Design</li>
-                                                        <li>Graphic Design</li>
-                                                        <li>Video Production</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <div id="grid" class="row">                                    
                                     <div class="col-xs-12 col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
                                         <img class="img-grid" src="img/portfolio/WordPower.jpg">
                                          <div class="modal-details">
@@ -228,26 +203,50 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 item"  data-groups='["all", "graphic"]'>
-                                        <img class="img-grid" src="img/portfolio/BurkeBabyAnnouncement.jpg">
+                                    <div class="col-xs-12 col-md-6 item" data-groups='["all", "design", "featured"]'>
+                                        <img class="img-grid" src="img/portfolio/Amplify.jpg">
                                         <div class="modal-details">
-                                            <span class="modal-tt">Baby Burke - Announcement</span>
+                                            <span class="modal-tt">Amplify - Professional Learing Maps</span>
                                             <ul class="modal-slider">
                                               <li>
-                                                <img src="img/details/BabyBurke/FinalConcept_09.jpg"/>
+                                                <img src="img/details/Amplify/Illustrations.jpg"/>
                                               </li>
-                                              <li><img src="img/details/BabyBurke/InitialConcept_09.jpg" /></li>
-                                              <li><img src="img/details/BabyBurke/Photo_09.jpg" /></li>
+                                              <li><img src="img/details/Amplify/Interface.jpg" /></li>
+                                              <li><img src="img/details/Amplify/Video.jpg" /></li>
                                             </ul>
                                             <div class="row well">
-                                                <div class="col-md-8">The Burke family wanted a two-in-one announcement celebrating the baby to come and their recent move to Brooklyn. The design started as a series of picture frames with snippets of moments from the family’s life, but was then simplified down to what you see now. The envelope was made from light-brown stock paper and was lined with a pink and white textured recycled paper.</div>
+                                                <div class="col-md-8">Amplify is creating Professional Development like never before. Professional Learning Maps is a product that offers quick and effective online learning for educators that don’t have a lot of time. It starts with a survey, where educators self assess how often they practice using certain skills. The results of the survey gives each educator a personalized learning map so that they can start practicing those skills they want the help most with.</div>
                                                 <div class="col-md-4">
                                                     My Contributions <br>
                                                     <ul>
-                                                        <li>Client Consultation</li>
+                                                        <li>UX Design</li>
+                                                        <li>Instructional Design</li>
                                                         <li>Graphic Design</li>
-                                                        <li>Illustration</li>
-                                                        <li>Printing/Production</li>
+                                                        <li>Video Production</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>      
+                                    <div class="col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
+                                        <img class="img-grid" src="img/portfolio/CulturalCompetence.jpg">
+                                        <div class="modal-details">
+                                            <span class="modal-tt">Cultural Competence</span>
+                                            <ul class="modal-slider">
+                                              <li>
+                                                <img src="img/details/CulturalCompetence/CC_09.jpg"/>
+                                              </li>
+                                              <li><img src="img/details/CulturalCompetence/video_09.jpg"/></li>
+                                            </ul>
+                                            <div class="row well">
+                                                <div class="col-md-8">My main task at VSP was to create a new training module about Cultural Diversity. This module was to open up a way of learning for the company - a module with multimedia and fun ways to interact with the content - not just reading text on screen. Cultural Competence and DIversity can be a touchy subject to talk about, so I planned to get the employees to talk about their experiences and do the teaching themselves. </div>
+                                                <div class="col-md-4">
+                                                    My Contributions <br>
+                                                    <ul>
+                                                        <li>Graphic Design</li>
+                                                        <li>UX Design</li>
+                                                        <li>Video Production</li>
+                                                        <li>Animation</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -275,6 +274,12 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>                                    
+                                    <div class="col-md-6 item" data-groups='["all", "featured", "graphic"]'>
+                                        <img class="img-grid" src="img/portfolio/BarryCozy.jpg">
+                                        <div class="modal-details">
+                                            COMING SOON
+                                        </div>
                                     </div>
                                     <div class="col-md-6 item" data-groups='["all", "design"]'>
                                         <img class="img-grid" src="img/portfolio/MetabolicDates.jpg">
@@ -296,40 +301,35 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 item" data-groups='["all", "featured", "graphic"]'>
-                                        <img class="img-grid" src="img/portfolio/BarryCozy.jpg">
-                                        <div class="modal-details">
-                                            COMING SOON
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
-                                        <img class="img-grid" src="img/portfolio/CulturalCompetence.jpg">
-                                        <div class="modal-details">
-                                            <span class="modal-tt">Cultural Competence</span>
-                                            <ul class="modal-slider">
-                                              <li>
-                                                <img src="img/details/CulturalCompetence/CC_09.jpg"/>
-                                              </li>
-                                              <li><img src="img/details/CulturalCompetence/video_09.jpg"/></li>
-                                            </ul>
-                                            <div class="row well">
-                                                <div class="col-md-8">My main task at VSP was to create a new training module about Cultural Diversity. This module was to open up a way of learning for the company - a module with multimedia and fun ways to interact with the content - not just reading text on screen. Cultural Competence and DIversity can be a touchy subject to talk about, so I planned to get the employees to talk about their experiences and do the teaching themselves. </div>
-                                                <div class="col-md-4">
-                                                    My Contributions <br>
-                                                    <ul>
-                                                        <li>Graphic Design</li>
-                                                        <li>UX Design</li>
-                                                        <li>Video Production</li>
-                                                        <li>Animation</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="col-md-6 item" data-groups='["all", "video"]'>
                                         <img class="img-grid" src="img/portfolio/PeekPackaging.jpg">
                                         <div class="modal-details">
                                             COMING SOON
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 item"  data-groups='["all", "graphic"]'>
+                                        <img class="img-grid" src="img/portfolio/BurkeBabyAnnouncement.jpg">
+                                        <div class="modal-details">
+                                            <span class="modal-tt">Baby Burke - Announcement</span>
+                                            <ul class="modal-slider">
+                                              <li>
+                                                <img src="img/details/BabyBurke/FinalConcept_09.jpg"/>
+                                              </li>
+                                              <li><img src="img/details/BabyBurke/InitialConcept_09.jpg" /></li>
+                                              <li><img src="img/details/BabyBurke/Photo_09.jpg" /></li>
+                                            </ul>
+                                            <div class="row well">
+                                                <div class="col-md-8">The Burke family wanted a two-in-one announcement celebrating the baby to come and their recent move to Brooklyn. The design started as a series of picture frames with snippets of moments from the family’s life, but was then simplified down to what you see now. The envelope was made from light-brown stock paper and was lined with a pink and white textured recycled paper.</div>
+                                                <div class="col-md-4">
+                                                    My Contributions <br>
+                                                    <ul>
+                                                        <li>Client Consultation</li>
+                                                        <li>Graphic Design</li>
+                                                        <li>Illustration</li>
+                                                        <li>Printing/Production</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
