@@ -362,7 +362,7 @@
                             <ul id="process-flow" data-direction="vertical" class="-accordion -accordion--basic -accordion--vertical">
                               <li class="-accordion__panel">
                                 <span class="-accordion__heading">SKETCH IT<span class="-accordian-count">1</span></span>
-                                <div class="-accordion__expander"><img src="img/process/01_Sketch%20it.jpg" /></div>
+                                <div class="-accordion__expander"><img src="img/process/01_Sketchit.jpg" /></div>
                               </li>
                               <li class="-accordion__panel" > 
                                 <span class="-accordion__heading">MOCK IT UP<span class="-accordian-count">2</span></span>
