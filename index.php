@@ -207,13 +207,13 @@
                                         <img class="img-grid" src="img/portfolio/Amplify.jpg">
                                         <div class="modal-details">
                                             <span class="modal-tt">Amplify - Professional Learing Maps</span>
-                                            <ul class="modal-slider">
+                                            <ul class="modal-slider">                                                
+                                                <li><img src="img/details/Amplify/Interface.jpg" /></li>
+                                              <li><img src="img/details/Amplify/Video.jpg" /></li>
                                               <li>
                                                 <img src="img/details/Amplify/Illustrations.jpg"/>
                                               </li>
                                               <li><img src="img/details/Amplify/Amplify_04.jpg" /></li>
-                                                <li><img src="img/details/Amplify/Interface.jpg" /></li>
-                                              <li><img src="img/details/Amplify/Video.jpg" /></li>
                                             </ul>
                                             <div class="row well">
                                                 <div class="col-md-8">Amplify is creating Professional Development like never before. Professional Learning Maps is a product that offers quick and effective online learning for educators that don’t have a lot of time. It starts with a survey, where educators self assess how often they practice using certain skills. The results of the survey gives each educator a personalized learning map so that they can start practicing those skills they want the help most with.</div>
@@ -234,9 +234,6 @@
                                         <div class="modal-details">
                                             <span class="modal-tt">Cultural Competence</span>
                                             <ul class="modal-slider">
-                                              <li>
-                                                <img src="img/details/CulturalCompetence/CC_09.jpg"/>
-                                              </li>
                                                 <li><img src="img/details/CulturalCompetence/CC_1.jpg"/></li>
                                                 <li><img src="img/details/CulturalCompetence/CC_3.jpg"/></li>
                                                 <li><img src="img/details/CulturalCompetence/CC_4_13.jpg"/></li>
@@ -260,12 +257,7 @@
                                         <img class="img-grid" src="img/portfolio/UNITE.jpg">
                                         <div class="modal-details">
                                             <span class="modal-tt">UNITE</span>
-                                            <ul class="modal-slider">
-                                              <li>
-                                                <iframe class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
-                                              </li>
-                                              <li><iframe class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe></li>
-                                            </ul>
+                                            <iframe width="100%" height="400px" class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
                                             <div class="row well">
                                                 <div class="col-md-8">Universal Networks in Travel and Education wanted me to help increase attendance to their events via social media. I created a series of promotional videos and flyers for club members to share with friends and family online and helped managed the sites to get people more excited. </div>
                                                 <div class="col-md-4">
@@ -326,7 +318,7 @@
                                     <div class="col-md-6 item" data-groups='["all", "video"]'>
                                         <img class="img-grid" src="img/portfolio/PeekPackaging.jpg">
                                         <div class="modal-details">
-                                            COMING SOON
+                                            <iframe width="100%" height="400px" class="video-thumb" src="//www.youtube.com/embed/Wy-NF3Qgx0U?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
                                         </div>
                                     </div>
                                     <div class="col-md-6 item"  data-groups='["all", "graphic"]'>
@@ -374,7 +366,9 @@
                               </li>
                                 <li class="-accordion__panel"> 
                                 <span class="-accordion__heading">DEVELOP IT<span class="-accordian-count">4</span></span>
-                                <div class="-accordion__expander"><img src="img/process/02_MockItV2.jpg" /></div>
+                                <div class="-accordion__expander">
+                                    <iframe width="100%" height="105%" class="video-thumb" src="//www.youtube.com/embed/m73XCm3LKuM?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
+                                    </div>
                               </li>
                             </ul>
 <!--

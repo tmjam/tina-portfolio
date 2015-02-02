@@ -142,7 +142,7 @@ html,body,.body-container
   float: left;
 }
 #module-container {
-display: none;
+ opacity: 0;
  height: 100vh; 
  overflow: scroll;
  overflow-x: hidden;
@@ -202,7 +202,7 @@ font-size: 20px;
 #profile-logo{
   text-align: right;
   margin-bottom: 20px;
-  margin-top: 15px;
+  margin-top: 50px;
   cursor: pointer;
   margin-right: 60px;
 }
@@ -341,7 +341,8 @@ text-transform: uppercase;}
 }
 #contact{
   text-align: center;
-  min-height: 300px;
+  min-height: 200px;
+  padding: 30px;
 }
 
 footer {
@@ -402,9 +403,11 @@ footer p{
     color: white;
     background-color: #ac2b22;
 }
-.-accordion__expander{
+div.-accordion__expander{
     overflow: hidden;
     width: 95% !important;
+    padding-left: 12px;
+    padding-top: 0px;
 }
 .-accordion__expander img {
     width: 100%;

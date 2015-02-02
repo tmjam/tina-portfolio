@@ -3,7 +3,7 @@
 	// Document ready function
 	$(function(){
 		setTimeout(function() {
-			$('#module-container').show();
+			$('#module-container').css({'opacity' : 1});
 			$('#pre-loader').hide();   
 			InitializeApp();
 		}, 1000);	
