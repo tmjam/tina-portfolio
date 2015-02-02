@@ -13,8 +13,8 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
-        <link rel="shortcut icon" sizes="196x196" href="img/touch/touch-icon-196x196.png">
-        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+        <link rel="shortcut icon" sizes="196x196" href="img/touch/Favicon.ico">
+        <link rel="shortcut icon" href="img/touch/Favicon.ico">
 
         <!-- Tile icon for Win8 (144x144 + tile color) -->
         <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
@@ -46,6 +46,7 @@
         <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">        
         <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">        
         <link rel="stylesheet" href="css/bottom.css">
+        <link rel="stylesheet" href="css/asAccordion.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="bower_components/components-modernizr/modernizr.js"></script>
     </head>
@@ -158,8 +159,7 @@
                                             </p>
 
                                             <div id="imgbadge">
-                                                <img src="img/portfolio/me.jpg" style="width: 290px">
-                                                <h4>ME</h4>
+                                                <img src="img/portfolio/Me_09.jpg" style="width: 290px">
                                             </div>
                                         </div>
                                     </div>
@@ -167,7 +167,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="featured" class="content-section scrollable" style="padding: 20px 70px;">
+                        <section id="featured" class="content-section scrollable" style="padding: 0px 70px;">
                             <h2 class="orange org-heading">FEATURED WORK</h2>
                             <div id="work-module-container">                            
                                 <!-- <ul id="filter">
@@ -211,7 +211,8 @@
                                               <li>
                                                 <img src="img/details/Amplify/Illustrations.jpg"/>
                                               </li>
-                                              <li><img src="img/details/Amplify/Interface.jpg" /></li>
+                                              <li><img src="img/details/Amplify/Amplify_04.jpg" /></li>
+                                                <li><img src="img/details/Amplify/Interface.jpg" /></li>
                                               <li><img src="img/details/Amplify/Video.jpg" /></li>
                                             </ul>
                                             <div class="row well">
@@ -236,6 +237,9 @@
                                               <li>
                                                 <img src="img/details/CulturalCompetence/CC_09.jpg"/>
                                               </li>
+                                                <li><img src="img/details/CulturalCompetence/CC_1.jpg"/></li>
+                                                <li><img src="img/details/CulturalCompetence/CC_3.jpg"/></li>
+                                                <li><img src="img/details/CulturalCompetence/CC_4_13.jpg"/></li>
                                               <li><img src="img/details/CulturalCompetence/video_09.jpg"/></li>
                                             </ul>
                                             <div class="row well">
@@ -278,7 +282,25 @@
                                     <div class="col-md-6 item" data-groups='["all", "featured", "graphic"]'>
                                         <img class="img-grid" src="img/portfolio/BarryCozy.jpg">
                                         <div class="modal-details">
-                                            COMING SOON
+                                            <span class="modal-tt">Barry Clean</span>
+                                            <ul class="modal-slider">
+                                              <li>
+                                                <img src="img/details/Barry/BarryClean_1.jpg"/>
+                                              </li>
+                                              <li><img src="img/details/Barry/BarryClean_2.jpg" /></li>
+                                              <li><img src="img/details/Barry/BarryClean_3_13.jpg" /></li>
+                                            </ul>
+                                            <div class="row well">
+                                                <div class="col-md-8">Amplify is creating Professional Development like never before. Professional Learning Maps is a product that offers quick and effective online learning for educators that don’t have a lot of time. It starts with a survey, where educators self assess how often they practice using certain skills. The results of the survey gives each educator a personalized learning map so that they can start practicing those skills they want the help most with.</div>
+                                                <div class="col-md-4">
+                                                    My Contributions <br>
+                                                    <ul>
+                                                        <li>UX Design</li>
+                                                        <li>Instructional Design</li>
+                                                        <li>Graphic Design</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6 item" data-groups='["all", "design"]'>
@@ -336,6 +358,26 @@
                             </div>
                         </section>
                         <section id="process" class="content-section scrollable">
+                            <h2 class="org-heading" style="padding: 25px 85px;">THE PROCESS</h2>
+                            <ul id="process-flow" data-direction="vertical" class="-accordion -accordion--basic -accordion--vertical">
+                              <li class="-accordion__panel">
+                                <span class="-accordion__heading">SKETCH IT<span class="-accordian-count">1</span></span>
+                                <div class="-accordion__expander"><img src="img/process/01_Sketch%20it.jpg" /></div>
+                              </li>
+                              <li class="-accordion__panel" > 
+                                <span class="-accordion__heading">MOCK IT UP<span class="-accordian-count">2</span></span>
+                                <div class="-accordion__expander"><img src="img/process/02_MockIt.jpg" /></div>
+                              </li>
+                              <li class="-accordion__panel"> 
+                                <span class="-accordion__heading">DESIGN IT<span class="-accordian-count">3</span></span>
+                                <div class="-accordion__expander"><img src="img/process/03_Designit.jpg" /></div>
+                              </li>
+                                <li class="-accordion__panel"> 
+                                <span class="-accordion__heading">DEVELOP IT<span class="-accordian-count">4</span></span>
+                                <div class="-accordion__expander"><img src="img/process/02_MockItV2.jpg" /></div>
+                              </li>
+                            </ul>
+<!--
                             <div id="process-gallery">
                                 <h2 class="org-heading" style="color: white;">THE PROCESS</h2>
                                 <p><span id="slider-prev" class="slider-prev"></span><span id="slider-next" class="slider-next"></span></p>
@@ -383,12 +425,13 @@ collaborating with developers, printers and/or other vendors to finish the job.<
                                   </li>
                                 </ul>
                             </div>
+-->
                         </section>
                         <section id="contact" class="content-section scrollable">
                             <div class="row-fluid">
-                                <div class="col-md-4"><a href="download/resume.pdf" target="_blank"><img src="img/portfolio/Resume.jpg" /></a></div>
-                                <div class="col-md-4"><a href="" id="say-hello-bottom"><img src="img/portfolio/SayHello.jpg" /></a></div>
-                                <div class="col-md-4"><img src="img/portfolio/HireMe.jpg" /></div>
+                                <div class="col-md-4"><a href="download/resume.pdf" id="resume" target="_blank"></a></div>
+                                <div class="col-md-4"><a href="" id="say-hello-bottom"></a></div>
+                                <div class="col-md-4"><a href="" id="hireme"></a></div>
                             </div>    
                         </section>
                         <footer>
@@ -408,6 +451,7 @@ collaborating with developers, printers and/or other vendors to finish the job.<
         <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
         <script type="text/javascript" src="js/jquery.pikachoose.min.js"></script>
         <script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
+        <script type="text/javascript" src="js/jquery-asAccordion.js"></script>
 
         <script src="js/helper.js"></script>
         <script src="js/main.js"></script>

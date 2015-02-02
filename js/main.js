@@ -18,7 +18,29 @@
 	  			prevText: '<i class="glyphicon glyphicon-chevron-left"></i>'
 			});
 
-			
+			 $('.-accordion').asAccordion({
+                 namespace: '-accordion',
+                // accordion theme. WIP
+                skin: null,
+
+                // breakpoint for mobile devices. WIP
+                mobile_breakpoint: 768,
+
+                // initial index panel
+                initialIndex: 0,
+
+                // CSS3 easing effects.
+                easing: 'ease-in-out',
+
+                // animation speed.
+                speed: 500,
+
+                // vertical or horizontal
+                direction: 'horizontal',
+
+                // jQuery mouse events. click, mousehover, etc.
+                event: 'click'
+              });
 			
 			$(document).on('click','#say-hello-top, #say-hello-bottom', function(e){
 				e.preventDefault();

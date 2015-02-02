@@ -222,18 +222,48 @@ ul.bxslider li img {
   width: 50%;
 }
 #imgbadge{
-  width: auto;
-  text-align: center;
-  border: 2px solid #aaa;
-  background-color: #eee;
   position: absolute;
-  top: 0px;
+  top: -30px;
   padding: 6px;
-  -ms-transform: rotate(4deg); /* IE 9 */
-    -webkit-transform: rotate(4deg); /* Chrome, Safari, Opera */
+/*-ms-transform: rotate(4deg); 
+    -webkit-transform: rotate(4deg);
     -moz-transform: rotate(4deg);
-    transform: rotate(4deg);
+    transform: rotate(4deg);*/
     right: 5%;
+}
+
+#resume {
+   background-image: url('../img/portfolio/Resume.jpg');
+   height: 135px;
+   width: 130px;
+   display: inline-block;
+}
+#resume:hover {
+    background-image: url('../img/portfolio/Resume_Rollover.jpg');
+}
+
+#say-hello-bottom {
+   background-image: url('../img/portfolio/SayHey.jpg');
+   height: 135px;
+   width: 130px;
+   display: inline-block;
+}
+#say-hello-bottom:hover {
+    background-image: url('../img/portfolio/SayHey__Rollover.jpg');
+}
+#hireme {
+   background-image: url('../img/portfolio/HireMe.jpg');
+   height: 135px;
+   width: 130px;
+   display: inline-block;
+}
+#hireme:hover {
+    background-image: url('../img/portfolio/HireMe_Rollover.png');
+}
+#say-hello-top:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
 }
 #imgbadge h4{
   font-family: BrainFlower;
@@ -347,17 +377,65 @@ footer p{
 .modal-body .bx-wrapper .bx-pager.bx-default-pager a.active {
   background-color: #000;
 }
+#process-flow {
+    overflow: hidden;
+    background-color: #eee;
+}
 .slider-next {
   right: 10px;
 }
 .slider-prev {
   left: 10px;
 }
+.-accordion--horizontal {
+    height: 330px;
+}
+.-accordion__heading{
+    font-family: BebasNeue;
+    font-size: 2.3rem;
+}
+.-accordion--horizontal .-accordion__heading{
+    width: 330px;
+    background-color: #eee;
+}
+.-accordion--active .-accordion__heading{
+    color: white;
+    background-color: #ac2b22;
+}
+.-accordion__expander{
+    overflow: hidden;
+    width: 95% !important;
+}
+.-accordion__expander img {
+    width: 100%;
+}
+li.-accordion__panel.-accordion--active{
+    width: 80% !important;
+}
+.-accordion--horizontal .-accordion__expander{
+    overflow: hidden;
+}
+.-accordian-count {
+    float: left;
+    /* Safari */
+-webkit-transform: rotate(90deg);
 
+/* Firefox */
+-moz-transform: rotate(90deg);
+
+/* IE */
+-ms-transform: rotate(90deg);
+
+/* Opera */
+-o-transform: rotate(90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+}
 #process{
   color: white;
-  background-color: #ac2b22;
-  padding: 10px 90px;
+  padding: 0px;
   margin-left: -15px;
   margin-right: -15px;
   position: relative;
@@ -619,6 +697,9 @@ textarea[contenteditable] {
     .header-img button {
       top: 60%;
     }
+      li.-accordion__panel.-accordion--active {
+    width: 80% !important;
+    }
   }
  
  
@@ -648,7 +729,24 @@ textarea[contenteditable] {
  
   /* Extra Small Devices, Phones */
   @media only screen and (max-width : 480px){
-    
+    .-accordian-count {
+    float: right;
+        /* Safari */
+    -webkit-transform: rotate(0deg);
+
+    /* Firefox */
+    -moz-transform: rotate(0deg);
+
+    /* IE */
+    -ms-transform: rotate(0deg);
+
+    /* Opera */
+    -o-transform: rotate(0deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+    }
     .context {
       color: #333;
       width: 100%;
@@ -721,6 +819,13 @@ textarea[contenteditable] {
     ul.modal-slider.pika-thumbs{
       display: none;
     }
+    li.-accordion__panel.-accordion--active {
+        width: 100% !important;
+    }
+      
+      #process h2 {
+          padding: 0px !important;
+      }
   }
  
   /* Custom, iPhone Retina */
