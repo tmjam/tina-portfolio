@@ -153,6 +153,9 @@ html,body,.body-container
  width: 78.9%;
 }
 #contact-modal {
+    font-family: BebasKaiRegular;
+}
+#contact-modal .modal-header {
   font-family: BebasNeue;
 }
 .pika-stage .pika-textnav, .pika-stage .pika-counter, .pika-stage .caption {
@@ -175,6 +178,8 @@ html,body,.body-container
 #contact-modal .modal-body{
   font-size: 18px;
   letter-spacing: 1px;
+    padding: 0px 80px;
+margin-top: 20px;
 }
 #pre-loader {
   width: 150px;

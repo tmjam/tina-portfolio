@@ -105,7 +105,7 @@
               </form>         
               </div>
               <div class="modal-footer">
-               <i>Send me an email and we can talk til the cows come home!</i>
+               Send me an email and we can talk til the cows come home!
               </div>
             </div>
           </div>
@@ -257,7 +257,11 @@
                                         <img class="img-grid" src="img/portfolio/UNITE.jpg">
                                         <div class="modal-details">
                                             <span class="modal-tt">UNITE</span>
-                                            <iframe width="100%" height="400px" class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
+                                            <div class="row">
+                                                <div class="col-md-6"><iframe width="100%" height="400px" class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe></div>
+                                                <div class="col-md-6"><iframe width="100%" height="400px" class="video-thumb" src="//www.youtube.com/embed/R3VvMNuH8_w?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe></div>
+                                            </div>
+                                            
                                             <div class="row well">
                                                 <div class="col-md-8">Universal Networks in Travel and Education wanted me to help increase attendance to their events via social media. I created a series of promotional videos and flyers for club members to share with friends and family online and helped managed the sites to get people more excited. </div>
                                                 <div class="col-md-4">
