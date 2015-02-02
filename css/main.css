@@ -181,6 +181,12 @@ html,body,.body-container
     padding: 0px 80px;
 margin-top: 20px;
 }
+.modal-lg{
+    width: 800px;
+}
+.pika-thumbs li {
+    width: 134px;    
+}
 #pre-loader {
   width: 150px;
 position: absolute;
