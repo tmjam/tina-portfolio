@@ -42,7 +42,7 @@
                 event: 'click'
               });
 			
-			$(document).on('click','#say-hello-top, #say-hello-bottom', function(e){
+			$(document).on('click','#say-hello-top, #say-hello-bottom, #hireme', function(e){
 				e.preventDefault();
 				$('#contact-modal').modal('show');
 			});
