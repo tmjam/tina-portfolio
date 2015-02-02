@@ -287,13 +287,13 @@
                                               <li><img src="img/details/Barry/BarryClean_3_13.jpg" /></li>
                                             </ul>
                                             <div class="row well">
-                                                <div class="col-md-8">Amplify is creating Professional Development like never before. Professional Learning Maps is a product that offers quick and effective online learning for educators that don’t have a lot of time. It starts with a survey, where educators self assess how often they practice using certain skills. The results of the survey gives each educator a personalized learning map so that they can start practicing those skills they want the help most with.</div>
+                                                <div class="col-md-8">Meet Barry - the kick-starter of the homemade soap product, BarryClean. He wanted soap packaging that was simple, easy to produce and inexpensive to print. So, I created something that adhered to any and all types of paper to give him the flexibility to change it depending on the scent and/or shape of the soap. Meanwhile the design for the other part of the packaging stayed clear and consistent.</div>
                                                 <div class="col-md-4">
                                                     My Contributions <br>
                                                     <ul>
-                                                        <li>UX Design</li>
-                                                        <li>Instructional Design</li>
+                                                        <li>Branding</li>
                                                         <li>Graphic Design</li>
+                                                        <li>Packaging Design</li>
                                                     </ul>
                                                 </div>
                                             </div>
