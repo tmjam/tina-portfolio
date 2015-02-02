@@ -258,8 +258,8 @@
                                         <div class="modal-details">
                                             <span class="modal-tt">UNITE</span>
                                             <div class="row">
-                                                <div class="col-md-6"><iframe width="100%" height="400px" class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe></div>
-                                                <div class="col-md-6"><iframe width="100%" height="400px" class="video-thumb" src="//www.youtube.com/embed/R3VvMNuH8_w?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe></div>
+                                                <div class="col-md-12"><iframe width="100%" height="400px" class="video-thumb" src="//www.youtube.com/embed/GJOLvBZqjnE?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe></div>
+                                                <div class="col-md-12"><iframe width="100%" height="400px" class="video-thumb" src="//www.youtube.com/embed/R3VvMNuH8_w?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe></div>
                                             </div>
                                             
                                             <div class="row well">
@@ -322,6 +322,7 @@
                                     <div class="col-md-6 item" data-groups='["all", "video"]'>
                                         <img class="img-grid" src="img/portfolio/PeekPackaging.jpg">
                                         <div class="modal-details">
+                                            <span class="modal-tt">Peek Packaging</span>
                                             <iframe width="100%" height="400px" class="video-thumb" src="//www.youtube.com/embed/Wy-NF3Qgx0U?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
                                         </div>
                                     </div>
