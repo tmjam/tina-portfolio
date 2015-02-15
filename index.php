@@ -121,9 +121,9 @@
                             </div>
                             <nav>
                                 <ul id="navigation">
-                                    <li data-section="about">ABOUT ME</li>
-                                    <li data-section="featured">FEATURED WORK</li>
-                                    <li data-section="process">THE PROCESS</li>
+                                    <li data-section="about">About Me</li>
+                                    <li data-section="featured">Featured Work</li>
+                                    <li data-section="process">The Process</li>
                                     <li data-section="contact">Contact Me</li>
                                 </ul>
                             </nav>

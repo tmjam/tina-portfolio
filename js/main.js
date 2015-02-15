@@ -18,6 +18,13 @@
 	  			prevText: '<i class="glyphicon glyphicon-chevron-left"></i>'
 			});
 
+			$('#profile-logo').click(function() {
+			        $('#module-container').animate({
+			          scrollTop: 0
+			        }, 1000);
+			    
+			  });
+
 			 $('.-accordion').asAccordion({
                  namespace: '-accordion',
                 // accordion theme. WIP
