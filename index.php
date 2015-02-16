@@ -8,6 +8,15 @@
         <meta name="MobileOptimized" content="320">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
         <meta http-equiv="cleartype" content="on">
+        <!-- SEO -->
+        <meta name=”description” content=”Kristina Finlayson kfinlayson portfolio for graphic and design”>
+        <!-- Social media -->
+        <meta property=”og:title” content=”Kritina Finlayson - Portfolio”/>
+        <meta property=”og:type” content=”article”/>
+        <meta property=”og:image” content=”http://kfinlayson.com/img/portfolio/Logo.jpg”/>
+        <meta property=”og:url” content=”http://kfinlayson.com”/>
+        <meta property=”og:description” content=”Awesome Graphics and UX designer”/>
+
 
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
