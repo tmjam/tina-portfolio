@@ -10,6 +10,8 @@
         <meta http-equiv="cleartype" content="on">
         <!-- SEO -->
         <meta name=”description” content=”Kristina Finlayson kfinlayson portfolio for graphic and design”>
+        <meta name="keywords" 
+         content="Graphic Design, Designer, Logos, Websites, E-commerce Websites, Printing, Business Cards, Stationery, Envelopes, Post Cards, Brochures, Rack Cards, Fliers, Ads, Appointment Cards, Hang Tags, Forms, Media Kits, Catalogs, Menus, Punch Cards, Posters, Signage, Photo Restoration, Retouching, Large Format Banners">
         <!-- Social media -->
         <meta property=”og:title” content=”Kritina Finlayson - Portfolio”/>
         <meta property=”og:type” content=”article”/>
