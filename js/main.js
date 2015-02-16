@@ -18,11 +18,10 @@
 	  			prevText: '<i class="glyphicon glyphicon-chevron-left"></i>'
 			});
 
-			$('#profile-logo').click(function() {
+			$('#profile-logo, .slideTop img').click(function() {
 			        $('#module-container').animate({
 			          scrollTop: 0
-			        }, 1000);
-			    
+			        }, 1000);			    
 			  });
 
 			 $('.-accordion').asAccordion({
@@ -94,11 +93,11 @@
 			/* initialize shuffle plugin */
 	        var $grid = $('#grid');
 	     	
-	        $grid.shuffle({
-	            itemSelector: '.item', // the selector for the items in the grid
-	            sequentialFadeDelay: 250,
-	            speed: 450
-	        });
+	        // $grid.shuffle({
+	        //     itemSelector: '.item', // the selector for the items in the grid
+	        //     sequentialFadeDelay: 250,
+	        //     speed: 450
+	        // });
 
 	        $(document).on('click','#filter a', function (e) {
 	            e.preventDefault();	                 

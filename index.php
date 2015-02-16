@@ -132,42 +132,13 @@
                     </div>
                     <div class="col-md-9 container" id="pre-loader"><img src="img/loading-cylon.svg" alt="Loading icon" /> <br> Loading ...</div>
                     <div class="col-md-9 container" id="module-container">
-                        <div class="row">
+                        <div class="row header-img-row">
                             <div class="col-md-12 header-img">
                                 <button id="say-hello-top" style="position:absolute; right:50px; top:75%" class="primary-btn">SAY HELLO</button>
                             </div>
                         </div>
-                        <section id="about" class="content-section scrollable">
-                            
-                            <div class="row">
-                                <div class="col-md-12" style="padding: 35px 85px; font-size: 14px;line-height: 24px">
-                                    <h2 class="orange org-heading">ABOUT ME</h2>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <h2 class="sub-heading"></h2>
-                                            <p class="context">
-                                                
-                                                I am a print and digital designer, currently working and living in Brooklyn, New York, with
-
-                                                a passion for presenting content creatively, wireframing, designing layouts, and creating
-
-                                                anything media related. <br> <br>
-
-                                                Outside of designing cool stuff, I love coffee­shop doodling, traveling with one pair of
-
-                                                pants and taking new streets to work everyday.
-                                            </p>
-
-                                            <div id="imgbadge">
-                                                <img src="img/portfolio/Me_09.jpg" style="width: 290px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </section>
-                        <section id="featured" class="content-section scrollable" style="padding: 0px 70px;">
+                        
+                        <section id="featured" class="content-section scrollable">
                             <h2 class="orange org-heading">FEATURED WORK</h2>
                             <div id="work-module-container">                            
                                 <!-- <ul id="filter">
@@ -177,7 +148,7 @@
                                     <li><a href="#" data-group="design">UX Design</a></li>
                                     <li><a href="#" data-group="video">Video Production</a></li>
                                 </ul> -->
-                                <div id="grid" class="row">                                    
+                                <div id="grid" class="row" style="margin-left: 0px;">                                    
                                     <div class="col-xs-12 col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
                                         <img class="img-grid" src="img/portfolio/WordPower.jpg">
                                          <div class="modal-details">
@@ -228,7 +199,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>      
+                                    </div> 
+                                    <div class="col-md-6 item"  data-groups='["all", "graphic"]'>
+                                        <img class="img-grid" src="img/portfolio/Portfolio_FinalDesign_13.jpg">
+                                        <div class="modal-details">
+                                            Comming soon
+                                        </div>
+                                    </div>     
                                     <div class="col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
                                         <img class="img-grid" src="img/portfolio/CulturalCompetence.jpg">
                                         <div class="modal-details">
@@ -274,7 +251,15 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>                                    
+                                    </div>      
+
+                                <div class="col-md-6 item"  data-groups='["all", "graphic"]'>
+                                        <img class="img-grid" src="img/portfolio/Portfolio_FinalDesign_21.jpg">
+                                        <div class="modal-details">
+                                            <span class="modal-tt">Jones Elementary</span>
+                                            Comming Soon
+                                        </div>
+                                    </div>                              
                                     <div class="col-md-6 item" data-groups='["all", "featured", "graphic"]'>
                                         <img class="img-grid" src="img/portfolio/BarryCozy.jpg">
                                         <div class="modal-details">
@@ -352,10 +337,12 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
                         </section>
+
                         <section id="process" class="content-section scrollable">
-                            <h2 class="org-heading" style="padding: 25px 85px;">THE PROCESS</h2>
+                            <h2 class="org-heading" style="margin-left: 40px;">THE PROCESS</h2>
                             <ul id="process-flow" data-direction="vertical" class="-accordion -accordion--basic -accordion--vertical">
                               <li class="-accordion__panel">
                                 <span class="-accordion__heading">SKETCH IT<span class="-accordian-count">1</span></span>
@@ -372,7 +359,7 @@
                                 <li class="-accordion__panel"> 
                                 <span class="-accordion__heading">DEVELOP IT<span class="-accordian-count">4</span></span>
                                 <div class="-accordion__expander">
-                                    <iframe width="100%" height="105%" class="video-thumb" src="//www.youtube.com/embed/m73XCm3LKuM?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="100%" height="450" class="video-thumb" src="//www.youtube.com/embed/m73XCm3LKuM?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
                                     </div>
                               </li>
                             </ul>
@@ -426,6 +413,36 @@ collaborating with developers, printers and/or other vendors to finish the job.<
                             </div>
 -->
                         </section>
+                        <section id="about" class="content-section scrollable">
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="orange org-heading">ABOUT ME</h2>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2 class="sub-heading"></h2>
+                                            <p class="context">
+                                                
+                                                I am a print and digital designer, currently working and living in Brooklyn, New York, with
+
+                                                a passion for presenting content creatively, wireframing, designing layouts, and creating
+
+                                                anything media related. <br> <br>
+
+                                                Outside of designing cool stuff, I love coffee­shop doodling, traveling with one pair of
+
+                                                pants and taking new streets to work everyday.
+                                            </p>
+
+                                            <div id="imgbadge">
+                                                <img src="img/portfolio/Me_09.jpg" style="width: 320px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </section>
                         <section id="contact" class="content-section scrollable">
                             <div class="row-fluid">
                                 <div class="col-md-4"><a href="download/resume.pdf" id="resume" target="_blank"></a></div>
@@ -433,10 +450,11 @@ collaborating with developers, printers and/or other vendors to finish the job.<
                                 <div class="col-md-4"><a href="" id="hireme"></a></div>
                             </div>    
                         </section>
+                        <span class="slideTop"> <img src="img/top.png" title="Jump to top"> </span>
                         <footer>
                             <p>Copyright &copy; 2015 Kristina Finlayson</p>
-                        </footer>   
-                    </div>
+                        </footer> 
+                    </div>  
                 </div>
             </div>
         </div>
