@@ -149,6 +149,36 @@
                             </div>
                         </div>
                         
+                        <section id="about" class="content-section scrollable">
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h2 class="orange org-heading">ABOUT ME</h2>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h2 class="sub-heading"></h2>
+                                            <p class="context">
+                                                
+                                                I am a print and digital designer, currently working and living in Brooklyn, New York, with
+
+                                                a passion for presenting content creatively, wireframing, designing layouts, and creating
+
+                                                anything media related. <br> <br>
+
+                                                Outside of designing cool stuff, I love coffee­shop doodling, traveling with one pair of
+
+                                                pants and taking new streets to work everyday.
+                                            </p>
+
+                                            <div id="imgbadge">
+                                                <img src="img/portfolio/Me_09.jpg" style="width: 320px">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </section>
                         <section id="featured" class="content-section scrollable">
                             <h2 class="orange org-heading">FEATURED WORK</h2>
                             <div id="work-module-container">                            
@@ -353,7 +383,7 @@
                         </section>
 
                         <section id="process" class="content-section scrollable">
-                            <h2 class="org-heading" style="margin-left: 40px;">THE PROCESS</h2>
+                            <h2 class="org-heading" style="margin-left: 80px;">THE PROCESS</h2>
                             <ul id="process-flow" data-direction="vertical" class="-accordion -accordion--basic -accordion--vertical">
                               <li class="-accordion__panel">
                                 <span class="-accordion__heading">SKETCH IT<span class="-accordian-count">1</span></span>
@@ -423,36 +453,6 @@ collaborating with developers, printers and/or other vendors to finish the job.<
                                 </ul>
                             </div>
 -->
-                        </section>
-                        <section id="about" class="content-section scrollable">
-                            
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h2 class="orange org-heading">ABOUT ME</h2>
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <h2 class="sub-heading"></h2>
-                                            <p class="context">
-                                                
-                                                I am a print and digital designer, currently working and living in Brooklyn, New York, with
-
-                                                a passion for presenting content creatively, wireframing, designing layouts, and creating
-
-                                                anything media related. <br> <br>
-
-                                                Outside of designing cool stuff, I love coffee­shop doodling, traveling with one pair of
-
-                                                pants and taking new streets to work everyday.
-                                            </p>
-
-                                            <div id="imgbadge">
-                                                <img src="img/portfolio/Me_09.jpg" style="width: 320px">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
                         </section>
                         <section id="contact" class="content-section scrollable">
                             <div class="row-fluid">
