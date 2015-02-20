@@ -383,7 +383,7 @@
                         </section>
 
                         <section id="process" class="content-section scrollable">
-                            <h2 class="org-heading" style="margin-left: 80px;">THE PROCESS</h2>
+                            <h2 class="org-heading" style="margin-left: 95px;">THE PROCESS</h2>
                             <ul id="process-flow" data-direction="vertical" class="-accordion -accordion--basic -accordion--vertical">
                               <li class="-accordion__panel">
                                 <span class="-accordion__heading">SKETCH IT<span class="-accordian-count">1</span></span>

@@ -123,6 +123,15 @@
 	        		IESafe:true
 	        	});
 	        });
+
+	        //Check to see if the window is top if not then display button
+			$('#module-container').scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('.slideTop img').fadeIn();
+				} else {
+					$('.slideTop img').fadeOut();
+				}
+			});
     	}
 	});
 })();
