@@ -330,7 +330,7 @@ ul#navigation li:hover, ul#navigation li.menu-active{
   font-family: HelveticaNeue;
 }
 .slideTop img {
-  width: 60px;
+  width: 40px;
   position: fixed;
   bottom: 20px;
   right: 10px;
@@ -492,6 +492,10 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 #process .resp-tab-content {
   border: none !important;
+  -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
 }
 #process .resp-tab-item,#process .resp-accordion {
   color : #aaa;
