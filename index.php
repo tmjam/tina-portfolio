@@ -59,6 +59,7 @@
         <link rel="stylesheet" href="css/bottom.css">
         <link rel="stylesheet" href="css/asAccordion.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css">
         <script src="bower_components/components-modernizr/modernizr.js"></script>
     </head>
     <body>
@@ -381,13 +382,35 @@
                                 
                             </div>
                         </section>
-
                         <section id="process" class="content-section scrollable">
-                            <h2 class="org-heading" style="margin-left: 95px;">THE PROCESS</h2>
-                            <ul id="process-flow" data-direction="vertical" class="-accordion -accordion--basic -accordion--vertical">
+                            <h2 class="org-heading">THE PROCESS</h2>
+                            <div id="parentHorizontalTab" style="display: block; width: 100%; margin: 0px;">
+                            <ul class="resp-tabs-list hor_1">
+                              <li class="resp-tab-item hor_1 resp-tab-active" aria-controls="hor_1_tab_item-0" role="tab" style="border-color: rgb(193, 193, 193); background-color: white;">SKETCH</li>
+                              <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-1" role="tab" style="background-color: rgb(245, 245, 245);">MOCK-UP</li>
+                              <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-2" role="tab" style="background-color: rgb(245, 245, 245);">DESIGN</li>
+                              <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-2" role="tab" style="background-color: rgb(245, 245, 245);">DEVELOP</li>
+                            </ul>
+                            <div class="resp-tabs-container hor_1" style="border-color: rgb(193, 193, 193);">
+                              <div class="resp-tab-content hor_1 resp-tab-content-active" aria-labelledby="hor_1_tab_item-0" style="display:block">
+                                <img src="img/process/01_Sketchit.jpg" />  
+                              </div>
+                              <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-1" style="border-color: rgb(193, 193, 193);">
+                                <img src="img/process/02_MockIt.jpg" />   
+                              </div>
+                              <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-2" style="border-color: rgb(193, 193, 193);">
+                                <img src="img/process/03_Designit.jpg" />
+                              </div>
+                              <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-3" style="border-color: rgb(193, 193, 193);">
+                                <iframe width="100%" height="450" class="video-thumb" src="//www.youtube.com/embed/m73XCm3LKuM?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
+                                    
+                              </div>
+                            </div>
+                          </div>
+                            <!-- <ul id="process-flow" data-direction="vertical" class="-accordion -accordion--basic -accordion--vertical">
                               <li class="-accordion__panel">
                                 <span class="-accordion__heading">SKETCH IT<span class="-accordian-count">1</span></span>
-                                <div class="-accordion__expander"><img src="img/process/01_Sketchit.jpg" /></div>
+                                <div class="-accordion__expander"></div>
                               </li>
                               <li class="-accordion__panel" > 
                                 <span class="-accordion__heading">MOCK IT UP<span class="-accordian-count">2</span></span>
@@ -403,7 +426,7 @@
                                     <iframe width="100%" height="450" class="video-thumb" src="//www.youtube.com/embed/m73XCm3LKuM?wmode=transparent&amp;autoplay=0&amp;theme=dark&amp;controls=1&amp;autohide=1&amp;loop=0&amp;showinfo=0&amp;rel=0&amp;playlist=false" frameborder="0" allowfullscreen></iframe>
                                     </div>
                               </li>
-                            </ul>
+                            </ul> -->
 <!--
                             <div id="process-gallery">
                                 <h2 class="org-heading" style="color: white;">THE PROCESS</h2>
@@ -480,7 +503,7 @@ collaborating with developers, printers and/or other vendors to finish the job.<
         <script type="text/javascript" src="js/jquery.pikachoose.min.js"></script>
         <script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
         <script type="text/javascript" src="js/jquery-asAccordion.js"></script>
-
+        <script type="text/javascript" src="js/easyResponsiveTabs.js"></script>
         <script src="js/helper.js"></script>
         <script src="js/main.js"></script>
 

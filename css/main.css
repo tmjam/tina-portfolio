@@ -470,11 +470,8 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 #process{
   color: white;
   padding: 0px;
-  margin-left: -15px;
-  margin-right: -15px;
   position: relative;
   min-height: 0px;
-  max-width: none;
 }
 .bx-wrapper .bx-viewport {
   left: -1px;
@@ -487,6 +484,27 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   background-color: transparent;
   font-family: BebasNeue;
 }
+
+#process .resp-tab-active{
+  border: none !important;
+  color: white !important;
+  
+}
+#process .resp-tab-content {
+  border: none !important;
+}
+#process .resp-tab-item,#process .resp-accordion {
+  color : #aaa;
+  font-family: BebasNeue;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+#process img {
+  width: 100%;
+}
+
 .orange {
   color: #f05642;
 }
@@ -771,6 +789,9 @@ textarea[contenteditable] {
  
   /* Small Devices, Tablets */
   @media only screen and (max-width : 768px){
+     #process .resp-tab-content {
+      margin-left: 15px; 
+     }
      #menu-container{
       display: none;    
      }
@@ -813,6 +834,7 @@ textarea[contenteditable] {
  
   /* Extra Small Devices, Phones */
   @media only screen and (max-width : 480px){
+
     .-accordian-count {
     float: right;
         /* Safari */
@@ -902,9 +924,6 @@ textarea[contenteditable] {
     #about .col-md-12 {
       padding: 20px !important;
     }
-    #process {
-      padding: 20px !important;
-    }
 
     .pika-stage img {
     height: 100%;
@@ -917,7 +936,7 @@ textarea[contenteditable] {
         width: 100% !important;
     }
 
-      #process h2 {
+      #process h2.org-heading {
           padding: 0px !important;
       }
   }
