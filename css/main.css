@@ -349,7 +349,7 @@ text-transform: uppercase;}
 #filter a.active {background: #222; color: white; }
  
 #grid {clear: both; position: relative}
-.item {height: 290px; padding: 0px; padding-right: 15px; background: transparent; color: #fff; font-size: 60px; text-align: center; line-height: 290px; cursor: default;}
+.item { padding: 0px; padding-right: 15px; background: transparent; color: #fff; font-size: 60px; text-align: center; cursor: default;}
 
 .red {background: red;}
 .green {background: green;}
@@ -530,7 +530,8 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 img.img-grid{
   width: 100%;
-  height: 280px;
+  margin-bottom: 15px;
+  height: 301px;
   left: 0;
   right: 0;
   -webkit-filter: grayscale(100%);
