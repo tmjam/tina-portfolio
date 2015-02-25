@@ -69,7 +69,7 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="image-modal-label">Modal title</h4>
+                <h4 class="modal-titlemoCONTACTdal-title" id="image-modal-label">Modal title</h4>
               </div>
               <div class="modal-body">
                 <!-- Navigations -->
@@ -245,7 +245,27 @@
                                     <div class="col-md-6 item"  data-groups='["all", "graphic"]'>
                                         <img class="img-grid" src="img/portfolio/Portfolio_FinalDesign_13.jpg">
                                         <div class="modal-details">
-                                            Comming soon
+                                        <span class="modal-tt">Technology and Data use</span>
+                                            <ul class="modal-slider">
+                                              <li><img src="img/details/MA_BB/MA_BBPage_16.jpg" /></li>
+                                              <li><img src="img/details/MA_BB/MA_YoutubeVideoBox.jpg" /></li>
+
+                                              <li>
+                                                <img src="img/details/MA_BB/INT04a-_Displaying_Data.jpg"/>
+                                              </li>
+                                            </ul>
+                                            <div class="row well">
+                                                <div class="col-md-8">The State Department of Massachusetts wanted an online course created in Blackboard. The challenge of the project was integrating our custom-made interactives into the LMS, which is not know for allowing much customization. To better illustrate more complex topics, we used animation, HTML interactives, illustrations, live video and imagery. </div>
+                                                <div class="col-md-4">
+                                                    My Contributions <br>
+                                                    <ul>
+                                                        <li>Graphic Design</li>
+                                                        <li>Wire Framing</li>
+                                                        <li>Animation</li>
+                                                        <li>Video-Editing</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>     
                                     <div class="col-md-6 item" data-groups='["all", "desgin", "graphic"]'>
@@ -298,8 +318,8 @@
                                 <div class="col-md-6 item"  data-groups='["all", "graphic"]'>
                                         <img class="img-grid" src="img/portfolio/Portfolio_FinalDesign_21.jpg">
                                         <div class="modal-details">
-                                            <span class="modal-tt">Jones Elementary</span>
-                                            Comming Soon
+                                            <span class="modal-tt">User Experience Prototype</span>
+                                            Coming soon!
                                         </div>
                                     </div>                              
                                     <div class="col-md-6 item" data-groups='["all", "featured", "graphic"]'>
@@ -478,10 +498,75 @@ collaborating with developers, printers and/or other vendors to finish the job.<
 -->
                         </section>
                         <section id="contact" class="content-section scrollable">
-                            <div class="row-fluid">
-                                <div class="col-md-4"><a href="download/resume.pdf" id="resume" target="_blank"></a></div>
+                            <div class="contact-form">
+                                <?php
+
+                                    use google\appengine\api\mail\Message;
+
+                                    $name=$email=$query="";
+
+                                    if($_SERVER["REQUEST_METHOD"]=="POST"){
+
+                                       $name = $_POST["name"];
+                                       $email = $_POST["email"];
+                                       $query = $_POST["query"];
+
+                                      require_once 'google/appengine/api/mail/Message.php';
+                                        $mail_options = [
+                                            "sender" => $email,
+                                            "to" => "tmjam.ahmed@gmail.com",
+                                            "subject" => "Contacting you from portfolio",
+                                            "textBody" => $query,
+                                        ];  
+                                        echo $mail_options;
+
+                                      try {
+                                          $message = new Message($mail_options);
+                                          $message->send();
+                                      } catch (InvalidArgumentException $e) {
+                                          echo "not send";
+                                      }
+                                    }
+                                ?> 
+                                <form method="POST">
+                                <!-- <div class="col-md-4"><a href="download/resume.pdf" id="resume" target="_blank"></a></div>
                                 <div class="col-md-4"><a href="" id="say-hello-bottom"></a></div>
-                                <div class="col-md-4"><a href="" id="hireme"></a></div>
+                                <div class="col-md-4"><a href="" id="hireme"></a></div> -->
+                                <h2 class="modal-title">CONTACT</h2>
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <input type="text" id="name" required placeholder="Name" />
+                                  </div>
+                                  <div class="col-md-5">
+                                    <input type="email" placeholder="Email" required id="email" />
+                                  </div>
+                                  <div class="col-md-3" style="font-size: 1.7rem;">
+                                    (918) 580 7351 <br>
+                                    kfinlayson9@gmail.com
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-9">
+                                    <textarea id="message" required placeholder="Message"></textarea>
+                                  </div>
+                                  <div class="col-md-3" style="height: 150px;line-height: 45px;font-size: 1.7rem">
+                                    <pre>Kristina Finlayson 
+<strong style="font-family: BebasNeue; font-size:1.7rem;">BROOKLYN, NEW YORK</strong></pre>
+                                    <div class="row">
+                                      <div class="col-md-4">
+                                        <a href="https://www.linkedin.com/in/kfinlayson" target="_blank"><img src="img/social/lin.jpg" > </a>
+                                      </div>
+                                      <div class="col-md-4">
+                                        <a href="https://www.facebook.com/kfinlayson19" target="_blank"><img src="img/social/fb.jpg" ></a>
+                                      </div>
+                                      <div class="col-md-4"></div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row" style="text-align: left; margin-left: 1px;">
+                                  <input type="submit" class="primary-btn" value="SUBMIT EMAIL" id="sendEmail" />
+                                </div>
+                                </form>
                             </div>    
                         </section>
                         <span class="slideTop"> <img src="img/top.png" title="Jump to top"> </span>

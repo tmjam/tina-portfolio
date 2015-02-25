@@ -372,10 +372,48 @@ text-transform: uppercase;}
 }
 #contact{
   text-align: center;
-  min-height: 315px;
-  margin-top: 60px;
+min-height: 400px;
+max-width: 103%;
+width: 103%;
+margin: 0;
+background: #ccc;
+font-family: HelveticaNeueLight;
+padding: 20px 10px;
+margin-left: -15px;
+
+}
+#contact h2 {
+  font-family: BebasNeue;
+  text-align: left;
+}
+#contact #sendEmail{
+   border-color: black;
+   background: black;
+   color: white;
+   padding: 1px 10px;
+
+} 
+.contact-form {
+  margin-left: 10%;
+margin-right: 10%;
+}
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea{
+  width: 100%;
+  border: none;
+margin-bottom: 20px;
+padding-left: 10px;
+font-size: 1.5rem;
+
 }
 
+.contact-form input[type="text"], .contact-form input[type="email"] {
+  height: 50px;
+line-height: 50px;
+}
+
+.contact-form textarea{
+  height: 150px;
+}
 footer {
   padding: 20px;
   background: #aaa;
