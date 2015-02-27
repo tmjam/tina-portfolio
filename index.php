@@ -145,9 +145,8 @@
                     <div class="col-md-9 container" id="pre-loader"><img src="img/loading-cylon.svg" alt="Loading icon" /> <br> Loading ...</div>
                     <div class="col-md-9 container" id="module-container">
                         <div class="row header-img-row">
-                            <div class="col-md-12 header-img">
-                                <button id="say-hello-top" style="position:absolute; right:50px; top:75%" class="primary-btn">SAY HELLO</button>
-                            </div>
+                            <img src="img/banner.jpg" style="width: 103%">
+                            <button id="say-hello-top" style="position:absolute; right:50px; top:75%" class="primary-btn">SAY HELLO</button> 
                         </div>
                         
                         <section id="about" class="content-section scrollable">
@@ -180,7 +179,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section id="featured" class="content-section scrollable">
+                        <section id="featured" style="margin-bottom: 35px;" class="content-section scrollable">
                             <h2 class="orange org-heading">FEATURED WORK</h2>
                             <div id="work-module-container">                            
                                 <!-- <ul id="filter">
@@ -497,37 +496,8 @@ collaborating with developers, printers and/or other vendors to finish the job.<
                             </div>
 -->
                         </section>
-                        <section id="contact" class="content-section scrollable">
+                        <section id="contact" style="margin-top:35px;" class="content-section scrollable">
                             <div class="contact-form">
-                                <?php
-
-                                    use google\appengine\api\mail\Message;
-
-                                    $name=$email=$query="";
-
-                                    if($_SERVER["REQUEST_METHOD"]=="POST"){
-
-                                       $name = $_POST["name"];
-                                       $email = $_POST["email"];
-                                       $query = $_POST["query"];
-
-                                      require_once 'google/appengine/api/mail/Message.php';
-                                        $mail_options = [
-                                            "sender" => $email,
-                                            "to" => "tmjam.ahmed@gmail.com",
-                                            "subject" => "Contacting you from portfolio",
-                                            "textBody" => $query,
-                                        ];  
-                                        echo $mail_options;
-
-                                      try {
-                                          $message = new Message($mail_options);
-                                          $message->send();
-                                      } catch (InvalidArgumentException $e) {
-                                          echo "not send";
-                                      }
-                                    }
-                                ?> 
                                 <form method="POST">
                                 <!-- <div class="col-md-4"><a href="download/resume.pdf" id="resume" target="_blank"></a></div>
                                 <div class="col-md-4"><a href="" id="say-hello-bottom"></a></div>
@@ -577,6 +547,35 @@ collaborating with developers, printers and/or other vendors to finish the job.<
                 </div>
             </div>
         </div>
+        <?php
+
+          use google\appengine\api\mail\Message;
+
+          $name=$email=$query="";
+
+          if($_SERVER["REQUEST_METHOD"]=="POST"){
+
+             $name = $_POST["name"];
+             $email = $_POST["email"];
+             $query = $_POST["message"];
+
+            require_once 'google/appengine/api/mail/Message.php';
+              $mail_options = [
+                  "sender" => $email,
+                  "to" => "tmjam.ahmed@gmail.com",
+                  "subject" => "Contacting you from portfolio",
+                  "textBody" => $query,
+              ];  
+              echo $mail_options;
+
+            try {
+                $message = new Message($mail_options);
+                $message->send();
+            } catch (InvalidArgumentException $e) {
+                echo "not send";
+            }
+          }
+      ?> 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>

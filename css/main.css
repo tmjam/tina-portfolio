@@ -332,7 +332,7 @@ ul#navigation li:hover, ul#navigation li.menu-active{
 .slideTop img {
   width: 40px;
   position: fixed;
-  bottom: 20px;
+  bottom: 70px;
   right: 10px;
   cursor: pointer;
   display: none;
@@ -416,7 +416,8 @@ line-height: 50px;
 }
 footer {
   padding: 20px;
-  background: #aaa;
+  background: #000;
+  color: #aaa;
   margin: -15px;
   font-size: 1.3rem;
 
@@ -556,6 +557,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   color: #ac2b22;
   text-transform: uppercase;
   letter-spacing: 2px;
+  margin-top: 0;
 }
 .title {
   font-family: BebasNeue;
@@ -816,7 +818,7 @@ textarea[contenteditable] {
       height: 336px;
     }
     .content-section {
-      padding-top: 0;
+      padding-top: 70px;
     }
      
   }
@@ -867,8 +869,8 @@ textarea[contenteditable] {
       #process h2 {
         margin-left: 15px !important;
       }
-      #about {
-        padding-top: 0;
+      #about {/*
+        padding-top: 0;*/
       }
       #contact{
         min-height: 512px;
@@ -907,7 +909,7 @@ textarea[contenteditable] {
       margin-left: 30px !important;
     }
     .item {
-      height: 230px;
+      height: 250px;
     }
     div.item img.img-grid {
       height: auto;
@@ -958,7 +960,7 @@ textarea[contenteditable] {
       cursor: pointer;
     }
     #work-module-container{
-      margin-top: -35px;
+      /*margin-top: -35px;*/
     }
     #featured {
       padding: 10px !important;
