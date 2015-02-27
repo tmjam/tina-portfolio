@@ -159,6 +159,7 @@ html,body,.body-container
  -webkit-overflow-scrolling: touch;
 }
 .header-img-row{
+  position: relative;
 }
 
 #contact-modal {
