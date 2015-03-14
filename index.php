@@ -520,16 +520,25 @@ collaborating with developers, printers and/or other vendors to finish the job.<
                                     <textarea id="message" required placeholder="Message"></textarea>
                                   </div>
                                   <div class="col-md-3" style="height: 150px;line-height: 45px;font-size: 1.7rem">
-                                    <pre>Kristina Finlayson 
-<strong style="font-family: BebasNeue; font-size:1.7rem;">BROOKLYN, NEW YORK</strong></pre>
-                                    <div class="row">
+                                   <span> Kristina Finlayson <br> 
+                                    <strong style="font-family: BebasNeue; font-size:1.7rem;">BROOKLYN, NEW YORK</strong>
+                                   </span>
+                                    <div class="row" style="text-align: center;">
                                       <div class="col-md-4">
-                                        <a href="https://www.linkedin.com/in/kfinlayson" target="_blank"><img src="img/social/lin.jpg" > </a>
+                                        <a href="https://www.linkedin.com/in/kfinlayson" target="_blank">
+                                          <span class="social linkedin"></span>
+                                        </a>
                                       </div>
                                       <div class="col-md-4">
-                                        <a href="https://www.facebook.com/kfinlayson19" target="_blank"><img src="img/social/fb.jpg" ></a>
+                                        <a href="https://www.facebook.com/kfinlayson19" target="_blank">
+                                          <span class="social facebook"></span>
+                                        </a>
                                       </div>
-                                      <div class="col-md-4"></div>
+                                      <div class="col-md-4">
+                                        <a href="https://instagram.com/kfinlayson9/" target="_blank">
+                                          <span class="social insta"></span>
+                                        </a>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -541,7 +550,7 @@ collaborating with developers, printers and/or other vendors to finish the job.<
                         </section>
                         <span class="slideTop"> <img src="img/top.png" title="Jump to top"> </span>
                         <footer>
-                            <p>Copyright &copy; 2015 Kristina Finlayson</p>
+                            <p>Copyright &copy; <?php echo date("Y"); ?> Kristina Finlayson</p>
                         </footer> 
                     </div>  
                 </div>

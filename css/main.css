@@ -396,7 +396,8 @@ margin-left: -15px;
 } 
 .contact-form {
   margin-left: 10%;
-margin-right: 10%;
+  margin-right: 10%;
+  font-family: HelveticaNeueLight;
 }
 .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea{
   width: 100%;
@@ -404,7 +405,7 @@ margin-right: 10%;
 margin-bottom: 20px;
 padding-left: 10px;
 font-size: 1.5rem;
-
+  font-family: HelveticaNeueLight;
 }
 
 .contact-form input[type="text"], .contact-form input[type="email"] {
@@ -547,6 +548,36 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 #process img {
   width: 100%;
+}
+
+.social {
+  display: block;
+  height: 35px;
+  width: 35px;
+}
+
+.social.facebook {
+  background-image: url('../img/social/facebook.jpg');
+}
+
+.social.insta {
+  background-image: url('../img/social/insta.jpg');
+}
+
+.social.linkedin {
+  background-image: url('../img/social/indeed.png');
+}
+
+.social.facebook:hover {
+  background-image: url('../img/social/facebook_hover.jpg');
+}
+
+.social.insta:hover {
+  background-image: url('../img/social/insta_hover.jpg');
+}
+
+.social.linkedin:hover {
+  background-image: url('../img/social/indeed_hover.png');
 }
 
 .orange {
