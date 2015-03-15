@@ -402,15 +402,22 @@ margin-left: -15px;
 .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea{
   width: 100%;
   border: none;
-margin-bottom: 20px;
-padding-left: 10px;
-font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  font-size: 1.5rem;
   font-family: HelveticaNeueLight;
+}
+#process .resp-tabs-list li{
+  padding: 10px 15px !important;
+}
+#process .resp-tabs-list li:hover{
+  background-color: #ac2b22 !important;
+  color: white;
 }
 
 .contact-form input[type="text"], .contact-form input[type="email"] {
   height: 50px;
-line-height: 50px;
+  line-height: 50px;
 }
 
 .contact-form textarea{
@@ -533,10 +540,11 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 #process .resp-tab-content {
   border: none !important;
-  -webkit-transition: all 0.2s ease-in-out;
-          -moz-transition: all 0.2s ease-in-out;
-          -o-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+   -webkit-transition: all .3s ease-in-out; 
+    -moz-transition: all .3s ease-in-out; 
+    -ms-transition: all .3s ease-in-out; 
+    -o-transition: all .3s ease-in-out; 
+    transition: all .3s ease-in-out; 
 }
 #process .resp-tab-item,#process .resp-accordion {
   color : #aaa;

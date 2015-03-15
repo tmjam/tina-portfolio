@@ -33,9 +33,10 @@
 	    
 	                $info.show();
 	            },
-	            activetab_bg: '#f05642', // background color for active tabs in this group
-        		active_border_color: '#f05642 !important', // border color for active tabs heads in this group
-        		active_content_border_color: '#f05642' // border color for active tabs contect in this group so that it matches the tab head border
+	            animation: 'fade',
+	            activetab_bg: '#ac2b22', // background color for active tabs in this group
+        		active_border_color: '#ac2b22 !important', // border color for active tabs heads in this group
+        		active_content_border_color: '#ac2b22' // border color for active tabs contect in this group so that it matches the tab head border
 	        });
 
 			$('#profile-logo, .slideTop img').click(function() {
