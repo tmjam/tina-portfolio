@@ -101,17 +101,19 @@
 				$('#'+$(this).attr('data-section')).addClass('active');			
 			});		
 
-			$('.scrollable').scrollable({
-			   direction: 'vertical',
-			   my: "bottom",
-			   offset: { top: '-20%' },
-	           in: function ( e, ui ) {
-	           		//console.log(e, ui.element[0].id);
-	           		//$('ul#navigation li').removeClass('menu-active');
-	           		//$('ul#navigation li[data-section='+ui.element[0].id+']').addClass('menu-active');
-	           }
-	        });
-			/* initialize shuffle plugin */
+			// $('.scrollable').scrollable({
+			//    direction: 'vertical',
+			//    my: "bottom",
+			//    offset: { top: '-20%' },
+	  //          in: function ( e, ui ) {
+	  //          		console.log(e, ui.element[0].id);
+	  //          		//$('ul#navigation li').removeClass('menu-active');
+	  //          		//$('ul#navigation li[data-section='+ui.element[0].id+']').addClass('menu-active');
+	  //          }
+	  //       });
+
+	        
+				/* initialize shuffle plugin */
 	        var $grid = $('#grid');
 	     	
 	        // $grid.shuffle({
@@ -147,6 +149,16 @@
 
 	        //Check to see if the window is top if not then display button
 			$('#module-container').scroll(function(){
+				var scrollTop = $(this).scrollTop();
+
+			    $('.scrollable').each(function() {
+
+			        var topDistance = $(this).offset().top;
+			        if ( (topDistance - 100) < 0 ) {
+			            $('ul#navigation li').removeClass('menu-active');
+	            		$('ul#navigation li[data-section='+$(this).attr("id")+']').addClass('menu-active');
+			        }
+			    });
 				if ($(this).scrollTop() > 100) {
 					$('.slideTop img').fadeIn();
 				} else {
