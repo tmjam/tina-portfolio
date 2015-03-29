@@ -182,8 +182,8 @@ html,body,.body-container
   color: black;
   border-color: black;
 }
-#contact-modal .modal-title{
-  font-size: 24px;
+#contact .modal-title{
+  color: black;
 }
 #contact-modal .modal-body{
   font-size: 18px;
@@ -395,8 +395,8 @@ margin-left: -15px;
 
 } 
 .contact-form {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 0 auto;
+  max-width: 945px;
   font-family: HelveticaNeueLight;
 }
 .contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea{
@@ -419,16 +419,38 @@ margin-left: -15px;
   height: 50px;
   line-height: 50px;
 }
-
+#quote {
+  font-family: BebasNeue;
+  background-color:  #ac2b22;
+  color: white;
+  text-align: center;
+  margin-left: -20px;
+  margin-right: -15px;
+  padding: 70px 10px;
+  font-size: 3.8rem;
+    margin-bottom: 50px;
+  max-width: 104%;
+}
+#quote span {
+  color: white;
+  font-size: 4.8rem;
+}
+#quote p:before, p:after {
+    content: '"';
+}
+#quote span.double-quote {
+  font-size: 8.8rem;
+}
 .contact-form textarea{
   height: 150px;
 }
 footer {
   padding: 20px;
   background: #000;
-  color: #aaa;
+  color: #fff;
   margin: -15px;
   font-size: 1.3rem;
+  font-family: HelveticaNeue;
 
 }
 footer p{
@@ -562,6 +584,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   display: block;
   height: 35px;
   width: 35px;
+  margin: 0 auto;
 }
 
 .social.facebook {
@@ -874,6 +897,22 @@ textarea[contenteditable] {
  
   /* Small Devices, Tablets */
   @media only screen and (max-width : 768px){
+     img.img-grid{
+       -webkit-filter: grayscale(0%);
+      -o-filter: grayscale(0%);
+      -moz-filter: grayscale(0%);
+      filter: grayscale(0%);
+      filter: transparent;
+      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+      cursor: pointer;
+    }
+    .modal-lg {
+      width: auto;
+    }
+    #quote, #contact {
+        max-width: 105%;
+        width: 105%;
+    }
      #process .resp-tab-content {
       margin-left: 15px; 
      }
@@ -919,7 +958,10 @@ textarea[contenteditable] {
  
   /* Extra Small Devices, Phones */
   @media only screen and (max-width : 480px){
-
+    #quote, #contact {
+        max-width: 109%;
+        width: 109%;
+    }
     .-accordian-count {
     float: right;
         /* Safari */
