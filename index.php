@@ -386,13 +386,13 @@
                 
               </div>
             </section>
-            <section id="quote" class="content-section scrollable">
+            <!-- <section id="quote" class="content-section scrollable">
               <p>
                 EVERY TIME SOMEONE ASKS A DESIGNER TO JUST <br>
                 <span class="org-heading">MAKE IT LOOK PRETTY,</span><br>
                 A BABY KITTEN DIES.
               </p>
-            </section>
+            </section> -->
             <section id="process" class="content-section scrollable">
               <h2 class="org-heading">THE PROCESS</h2>
               <div id="parentHorizontalTab" style="display: block; width: 100%; margin: 0px;">
