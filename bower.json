@@ -14,7 +14,8 @@
     "normalize.css": "3.0.2",
     "components-modernizr": "2.8.3",
     "shufflejs": "3.0.0",
-    "bxslider": "4.1.2"
+    "bxslider": "4.1.2",
+    "remarkable-bootstrap-notify": "3.0.0"
   },
   "devDependencies": {
   }

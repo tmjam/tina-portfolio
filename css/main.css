@@ -1095,3 +1095,11 @@ textarea[contenteditable] {
       padding: 20px !important;
     }
   }
+
+  .progress {
+    height: 5px
+  }
+
+  div.alert {
+    font-size: 1.5rem;
+  }

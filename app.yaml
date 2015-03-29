@@ -37,6 +37,9 @@ handlers:
 - url: /index.php
   script: index.php
   
+- url: /email.php
+  script: email.php
+  
 - url: /js
   static_dir: js
 

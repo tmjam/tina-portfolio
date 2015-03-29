@@ -422,7 +422,7 @@
             </section>
             <section id="contact" style="margin-top:35px;" class="content-section scrollable">
               <div class="contact-form">
-                <form method="POST">
+                <form method="POST" id="contact-ajax-form">
                   <!-- <div class="col-md-4"><a href="download/resume.pdf" id="resume" target="_blank"></a></div>
                   <div class="col-md-4"><a href="" id="say-hello-bottom"></a></div>
                   <div class="col-md-4"><a href="" id="hireme"></a></div> -->
@@ -431,15 +431,15 @@
                     <div class="col-md-9">
                       <div class="row">
                         <div class="col-md-5">
-                          <input type="text" id="name" required placeholder="Name" />
+                          <input type="text" id="name" name="name" required placeholder="Name" />
                         </div>
                         <div class="col-md-7">
-                          <input type="email" placeholder="Email" required id="email" />
+                          <input type="email" placeholder="Email" required id="email" name="email"/>
                         </div>
                       </div>
                       <div class="row">
                         <div class="col-md-12">
-                          <textarea id="message" required placeholder="Message"></textarea>
+                          <textarea id="message" required placeholder="Message" name="message"></textarea>
                         </div>
                       </div>
                     </div>
@@ -491,29 +491,7 @@
         </div>
       </div>
     </div>
-    <?php
-    use google\appengine\api\mail\Message;
-    $name=$email=$query="";
-    if($_SERVER["REQUEST_METHOD"]=="POST"){
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $query = $_POST["message"];
-    require_once 'google/appengine/api/mail/Message.php';
-    $mail_options = [
-    "sender" => $email,
-    "to" => "tmjam.ahmed@gmail.com",
-    "subject" => "Contacting you from portfolio",
-    "textBody" => $query,
-    ];
-    echo $mail_options;
-    try {
-    $message = new Message($mail_options);
-    $message->send();
-    } catch (InvalidArgumentException $e) {
-    echo "not send";
-    }
-    }
-    ?>
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
@@ -526,6 +504,8 @@
     <script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
     <script type="text/javascript" src="js/jquery-asAccordion.js"></script>
     <script type="text/javascript" src="js/easyResponsiveTabs.js"></script>
+    <script type="text/javascript" src="js/bootstrap-notify.min.js"></script>
+     <script src="http://malsup.github.com/jquery.form.js"></script> 
     <script src="js/helper.js"></script>
     <script src="js/main.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

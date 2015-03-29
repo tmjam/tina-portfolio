@@ -101,17 +101,6 @@
 				$('#'+$(this).attr('data-section')).addClass('active');			
 			});		
 
-			// $('.scrollable').scrollable({
-			//    direction: 'vertical',
-			//    my: "bottom",
-			//    offset: { top: '-20%' },
-	  //          in: function ( e, ui ) {
-	  //          		console.log(e, ui.element[0].id);
-	  //          		//$('ul#navigation li').removeClass('menu-active');
-	  //          		//$('ul#navigation li[data-section='+ui.element[0].id+']').addClass('menu-active');
-	  //          }
-	  //       });
-
 	        
 				/* initialize shuffle plugin */
 	        var $grid = $('#grid');
@@ -163,6 +152,38 @@
 					$('.slideTop img').fadeIn();
 				} else {
 					$('.slideTop img').fadeOut();
+				}
+			});
+
+			$('#contact-ajax-form').ajaxForm({
+				url: 'email.php',
+				type: 'POST',
+				success: function(data){
+					console.log(data);
+					$.notify({
+						// options
+						message: 'Thank you for contacting me, I will get back to you as soon as I can spare sometime from the awesome work I do !',
+						
+					},{
+						// settings
+						position: null,
+						delay: 5000,
+						type: "success",
+						allow_dismiss: true,
+						newest_on_top: false,
+						placement: {
+							from: "top",
+							align: "center"
+						},
+						animate: {
+							enter: 'animated bounceIn',
+							exit: 'animated bounceOut'
+						}
+					});
+					
+				},
+				error: function(){
+					$.notify("Oops something went wrong please send a direct email to kfinlayson9@gmail.com");
 				}
 			});
     	}
